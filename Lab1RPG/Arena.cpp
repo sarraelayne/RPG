@@ -4,6 +4,7 @@ using namespace std;
 
 
 bool Arena::addFighter(string info) {
+    int arenaSize;
     stringstream ss(info);
     string name;
     string type;
@@ -18,15 +19,15 @@ bool Arena::addFighter(string info) {
         cout << "Specs: " << hp << " " << strength << " " << speed << " " << magic;
         if (type == "A") {
             cout << "Adding archer" << endl;
-            fighterVec.push_back(new Archer(name, hp));
+            fighterVec.push_back(new Archer(name, hp, strength, speed, magic));
         }
         else if (type == "C") {
             cout << "Adding cleric" << endl;
-            fighterVec.push_back(new Cleric(name, hp));
+            fighterVec.push_back(new Cleric(name, hp, strength, speed, magic));
         }
         else if (type == "R") {
             cout << "Adding robot" << endl;
-            fighterVec.push_back(new Robot(name, hp));
+            fighterVec.push_back(new Robot(name, hp, strength, speed, magic));
         }
         else {
             return false;
@@ -56,4 +57,7 @@ FighterInterface* Arena::getFighter(string name) {
 }
 
 
-int Arena::getSize () const;
+int Arena::getSize () const {
+    arenaSize = fighterVec.size();
+    return arenaSize;
+}

@@ -1,20 +1,15 @@
 #include "Archer.h"
+using namespace std;
 
-Archer::Archer() {
-    cout << "default archer constructor";
+int Archer::getDamage() {
+	damage = speed;
+	return damage;
 }
-
-Archer::Archer(int fighterNum) {
-    cout << "archer(fighterNum) constructor";
-    srand(time(NULL));
-    //setMe(fighterNum);
+void Archer::reset() {
+    
+	return speed;
 }
-
-Archer::~Archer() {
-    cout << "archer destructor";
-}
-
-int Archer::selectAction(int game [3][3]) {ame, action)) {
-        action = rand % 9;
-    }
+bool Archer::useAbility {
+	speed = speed + 1;
+	return true;
 }
