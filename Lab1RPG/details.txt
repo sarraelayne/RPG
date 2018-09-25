@@ -1,9 +1,5 @@
 out_file1.txt
 out_file2.txt
-  Josh 100 100 3 4 5					      |	  Josh 0 100 3 4 5
-  Kel 100 100 3 4 5					      |	  Kel 25 100 3 4 5
-  Spryte 100 100 3 4 5					      |	  Spryte 50 100 3 4 5
-  Spen00 100 100 3 4 5					      |	  Spen00 32 100 3 4 5
 out_file3.txt
 out_file4.txt
 addFighter Lason A 1 1 1 1 1 Invalid			      |	addFighter Lason A 1 1 1 1 1 Added
@@ -13,13 +9,19 @@ out_file5.txt
   Creeper -90 10 100 1 1				      |	  Creeper -89 10 100 1 1
   Creeper 10 10 100 1 1					      |	  Creeper 26 10 100 1 1
   Sheep -95 5 1 1 1					      |	  Sheep -94 5 1 1 1
-  Sheep 5 5 1 1 1					      |	  Sheep -94 5 1 1 1
-							      <
   Cow 8 10 2 1 3					      <
   Sheep 2 5 1 2 1					      <
 							      <
-  Cow 9 10 2 1 3					      <
-  Sheep 0 5 1 2 1					      <
+  Sheep 0 5 1 2 1					      |	  Sheep 4 5 1 2 1
+							      >
+							      >	  Cow 7 10 2 1 3
+							      >	  Sheep 3 5 1 3 1
+							      >
+							      >	  Cow 4 10 2 1 3
+							      >	  Sheep 2 5 1 4 1
+							      >
+							      >	  Cow 0 10 2 1 3
+							      >	  Sheep 1 5 1 5 1
   Tinman 99 100 5 1 7					      |	  Tinman 100 100 5 1 7
   Spacker 41 50 1 1 1					      |	  Spacker 46 50 1 1 1
   Tinman 99 100 5 1 7					      |	  Tinman 100 100 5 1 7
@@ -38,299 +40,453 @@ out_file5.txt
   Spacker 13 50 1 1 1					      |	  Spacker 18 50 1 1 1
   Tinman 99 100 5 1 7					      |	  Tinman 100 100 5 1 7
   Spacker 9 50 1 1 1					      |	  Spacker 14 50 1 1 1
+  Tinman 99 100 5 1 7					      |	  Tinman 100 100 5 1 7
+  Spacker 5 50 1 1 1					      |	  Spacker 10 50 1 1 1
 							      >
 							      >	  Tinman 100 100 5 1 7
-							      >	  Spacker 10 50 1 1 1
-  Tinman 99 100 5 1 7					      |	  Tinman 100 100 5 1 7
-  Spacker 5 50 1 1 1					      |	  Spacker 6 50 1 1 1
+							      >	  Spacker 6 50 1 1 1
 							      >
 							      >	  Tinman 100 100 5 1 7
 							      >	  Spacker 2 50 1 1 1
   Spacker 0 50 1 1 1					      |	  Spacker -2 50 1 1 1
-  Joshua 990 1000 10 80 10				      |	  Joshua 991 1000 10 80 10
-  NORAD 745 750 30 40 1					      |	  NORAD 755 750 30 40 1
-  Joshua 981 1000 10 80 10				      |	  Joshua 982 1000 10 80 10
-  NORAD 747 750 30 40 1					      |	  NORAD 760 750 30 40 1
-  Joshua 972 1000 10 80 10				      |	  Joshua 973 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 765 750 30 40 1
-  Joshua 963 1000 10 80 10				      |	  Joshua 964 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 770 750 30 40 1
-  Joshua 954 1000 10 80 10				      |	  Joshua 955 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 775 750 30 40 1
-  Joshua 945 1000 10 80 10				      |	  Joshua 946 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 780 750 30 40 1
-  Joshua 936 1000 10 80 10				      |	  Joshua 937 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 785 750 30 40 1
-  Joshua 927 1000 10 80 10				      |	  Joshua 928 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 790 750 30 40 1
-  Joshua 918 1000 10 80 10				      |	  Joshua 919 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 795 750 30 40 1
-  Joshua 909 1000 10 80 10				      |	  Joshua 910 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 800 750 30 40 1
-  Joshua 900 1000 10 80 10				      |	  Joshua 901 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 805 750 30 40 1
-  Joshua 891 1000 10 80 10				      |	  Joshua 892 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 810 750 30 40 1
-  Joshua 882 1000 10 80 10				      |	  Joshua 883 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 815 750 30 40 1
-  Joshua 873 1000 10 80 10				      |	  Joshua 874 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 820 750 30 40 1
-  Joshua 864 1000 10 80 10				      |	  Joshua 865 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 825 750 30 40 1
-  Joshua 855 1000 10 80 10				      |	  Joshua 856 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 830 750 30 40 1
-  Joshua 846 1000 10 80 10				      |	  Joshua 847 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 835 750 30 40 1
-  Joshua 837 1000 10 80 10				      |	  Joshua 838 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 840 750 30 40 1
-  Joshua 828 1000 10 80 10				      |	  Joshua 829 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 845 750 30 40 1
-  Joshua 819 1000 10 80 10				      |	  Joshua 820 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 850 750 30 40 1
-  Joshua 810 1000 10 80 10				      |	  Joshua 811 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 855 750 30 40 1
-  Joshua 801 1000 10 80 10				      |	  Joshua 802 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 860 750 30 40 1
-  Joshua 792 1000 10 80 10				      |	  Joshua 793 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 865 750 30 40 1
-  Joshua 783 1000 10 80 10				      |	  Joshua 784 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 870 750 30 40 1
-  Joshua 774 1000 10 80 10				      |	  Joshua 775 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 875 750 30 40 1
-  Joshua 765 1000 10 80 10				      |	  Joshua 766 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 880 750 30 40 1
-  Joshua 756 1000 10 80 10				      |	  Joshua 757 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 885 750 30 40 1
-  Joshua 747 1000 10 80 10				      |	  Joshua 748 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 890 750 30 40 1
-  Joshua 738 1000 10 80 10				      |	  Joshua 739 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 895 750 30 40 1
-  Joshua 729 1000 10 80 10				      |	  Joshua 730 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 900 750 30 40 1
-  Joshua 720 1000 10 80 10				      |	  Joshua 721 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 905 750 30 40 1
-  Joshua 711 1000 10 80 10				      |	  Joshua 712 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 910 750 30 40 1
-  Joshua 702 1000 10 80 10				      |	  Joshua 703 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 915 750 30 40 1
-  Joshua 693 1000 10 80 10				      |	  Joshua 694 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 920 750 30 40 1
-  Joshua 684 1000 10 80 10				      |	  Joshua 685 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 925 750 30 40 1
-  Joshua 675 1000 10 80 10				      |	  Joshua 676 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 930 750 30 40 1
-  Joshua 666 1000 10 80 10				      |	  Joshua 667 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 935 750 30 40 1
-  Joshua 657 1000 10 80 10				      |	  Joshua 658 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 940 750 30 40 1
-  Joshua 648 1000 10 80 10				      |	  Joshua 649 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 945 750 30 40 1
-  Joshua 639 1000 10 80 10				      |	  Joshua 640 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 950 750 30 40 1
-  Joshua 630 1000 10 80 10				      |	  Joshua 631 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 955 750 30 40 1
-  Joshua 621 1000 10 80 10				      |	  Joshua 622 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 960 750 30 40 1
-  Joshua 612 1000 10 80 10				      |	  Joshua 613 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 965 750 30 40 1
-  Joshua 603 1000 10 80 10				      |	  Joshua 604 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 970 750 30 40 1
-  Joshua 594 1000 10 80 10				      |	  Joshua 595 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 975 750 30 40 1
-  Joshua 585 1000 10 80 10				      |	  Joshua 586 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 980 750 30 40 1
-  Joshua 576 1000 10 80 10				      |	  Joshua 577 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 985 750 30 40 1
-  Joshua 567 1000 10 80 10				      |	  Joshua 568 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 990 750 30 40 1
-  Joshua 558 1000 10 80 10				      |	  Joshua 559 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 995 750 30 40 1
-  Joshua 549 1000 10 80 10				      |	  Joshua 550 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1000 750 30 40 1
-  Joshua 540 1000 10 80 10				      |	  Joshua 541 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1005 750 30 40 1
-  Joshua 531 1000 10 80 10				      |	  Joshua 532 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1010 750 30 40 1
-  Joshua 522 1000 10 80 10				      |	  Joshua 523 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1015 750 30 40 1
-  Joshua 513 1000 10 80 10				      |	  Joshua 514 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1020 750 30 40 1
-  Joshua 504 1000 10 80 10				      |	  Joshua 505 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1025 750 30 40 1
-  Joshua 495 1000 10 80 10				      |	  Joshua 496 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1030 750 30 40 1
-  Joshua 486 1000 10 80 10				      |	  Joshua 487 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1035 750 30 40 1
-  Joshua 477 1000 10 80 10				      |	  Joshua 478 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1040 750 30 40 1
-  Joshua 468 1000 10 80 10				      |	  Joshua 469 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1045 750 30 40 1
-  Joshua 459 1000 10 80 10				      |	  Joshua 460 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1050 750 30 40 1
-  Joshua 450 1000 10 80 10				      |	  Joshua 451 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1055 750 30 40 1
-  Joshua 441 1000 10 80 10				      |	  Joshua 442 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1060 750 30 40 1
-  Joshua 432 1000 10 80 10				      |	  Joshua 433 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1065 750 30 40 1
-  Joshua 423 1000 10 80 10				      |	  Joshua 424 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1070 750 30 40 1
-  Joshua 414 1000 10 80 10				      |	  Joshua 415 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1075 750 30 40 1
-  Joshua 405 1000 10 80 10				      |	  Joshua 406 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1080 750 30 40 1
-  Joshua 396 1000 10 80 10				      |	  Joshua 397 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1085 750 30 40 1
-  Joshua 387 1000 10 80 10				      |	  Joshua 388 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1090 750 30 40 1
-  Joshua 378 1000 10 80 10				      |	  Joshua 379 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1095 750 30 40 1
-  Joshua 369 1000 10 80 10				      |	  Joshua 370 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1100 750 30 40 1
-  Joshua 360 1000 10 80 10				      |	  Joshua 361 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1105 750 30 40 1
-  Joshua 351 1000 10 80 10				      |	  Joshua 352 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1110 750 30 40 1
-  Joshua 342 1000 10 80 10				      |	  Joshua 343 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1115 750 30 40 1
-  Joshua 333 1000 10 80 10				      |	  Joshua 334 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1120 750 30 40 1
-  Joshua 324 1000 10 80 10				      |	  Joshua 325 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1125 750 30 40 1
-  Joshua 315 1000 10 80 10				      |	  Joshua 316 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1130 750 30 40 1
-  Joshua 306 1000 10 80 10				      |	  Joshua 307 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1135 750 30 40 1
-  Joshua 297 1000 10 80 10				      |	  Joshua 298 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1140 750 30 40 1
-  Joshua 288 1000 10 80 10				      |	  Joshua 289 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1145 750 30 40 1
-  Joshua 279 1000 10 80 10				      |	  Joshua 280 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1150 750 30 40 1
-  Joshua 270 1000 10 80 10				      |	  Joshua 271 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1155 750 30 40 1
-  Joshua 261 1000 10 80 10				      |	  Joshua 262 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1160 750 30 40 1
-  Joshua 252 1000 10 80 10				      |	  Joshua 253 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1165 750 30 40 1
-  Joshua 243 1000 10 80 10				      |	  Joshua 244 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1170 750 30 40 1
-  Joshua 234 1000 10 80 10				      |	  Joshua 235 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1175 750 30 40 1
-  Joshua 225 1000 10 80 10				      |	  Joshua 226 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1180 750 30 40 1
-  Joshua 216 1000 10 80 10				      |	  Joshua 217 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1185 750 30 40 1
-  Joshua 207 1000 10 80 10				      |	  Joshua 208 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1190 750 30 40 1
-  Joshua 198 1000 10 80 10				      |	  Joshua 199 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1195 750 30 40 1
-  Joshua 189 1000 10 80 10				      |	  Joshua 190 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1200 750 30 40 1
-  Joshua 180 1000 10 80 10				      |	  Joshua 181 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1205 750 30 40 1
-  Joshua 171 1000 10 80 10				      |	  Joshua 172 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1210 750 30 40 1
-  Joshua 162 1000 10 80 10				      |	  Joshua 163 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1215 750 30 40 1
-  Joshua 153 1000 10 80 10				      |	  Joshua 154 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1220 750 30 40 1
-  Joshua 144 1000 10 80 10				      |	  Joshua 145 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1225 750 30 40 1
-  Joshua 135 1000 10 80 10				      |	  Joshua 136 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1230 750 30 40 1
-  Joshua 126 1000 10 80 10				      |	  Joshua 127 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1235 750 30 40 1
-  Joshua 117 1000 10 80 10				      |	  Joshua 118 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1240 750 30 40 1
-  Joshua 108 1000 10 80 10				      |	  Joshua 109 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1245 750 30 40 1
-  Joshua 99 1000 10 80 10				      |	  Joshua 100 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1250 750 30 40 1
-  Joshua 90 1000 10 80 10				      |	  Joshua 91 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1255 750 30 40 1
-  Joshua 81 1000 10 80 10				      |	  Joshua 82 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1260 750 30 40 1
-  Joshua 72 1000 10 80 10				      |	  Joshua 73 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1265 750 30 40 1
-  Joshua 63 1000 10 80 10				      |	  Joshua 64 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1270 750 30 40 1
-  Joshua 54 1000 10 80 10				      |	  Joshua 55 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1275 750 30 40 1
-  Joshua 45 1000 10 80 10				      |	  Joshua 46 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1280 750 30 40 1
-  Joshua 36 1000 10 80 10				      |	  Joshua 37 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1285 750 30 40 1
-  Joshua 27 1000 10 80 10				      |	  Joshua 28 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1290 750 30 40 1
-  Joshua 18 1000 10 80 10				      |	  Joshua 19 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1295 750 30 40 1
-  Joshua 9 1000 10 80 10				      |	  Joshua 10 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1300 750 30 40 1
-  Joshua 0 1000 10 80 10				      |	  Joshua 1 1000 10 80 10
-  NORAD 750 750 30 40 1					      |	  NORAD 1305 750 30 40 1
-							      >
-							      >	  Joshua -8 1000 10 80 10
-							      >	  NORAD 1310 750 30 40 1
-  Honeydew 124 150 14 8 11				      |	  Honeydew 140 150 14 8 11
-  HoneydewClone 126 150 14 8 11				      |	  HoneydewClone 140 150 14 8 11
-							      >
-							      >	  Honeydew 130 150 14 8 11
-							      >	  HoneydewClone 130 150 14 8 11
-							      >
-							      >	  Honeydew 120 150 14 8 11
-							      >	  HoneydewClone 120 150 14 8 11
-  HoneydewClone 112 150 14 8 11				      |	  HoneydewClone 110 150 14 8 11
-  Honeydew 99 150 14 8 11				      |	  Honeydew 100 150 14 8 11
-  HoneydewClone 101 150 14 8 11				      |	  HoneydewClone 100 150 14 8 11
-  Honeydew 89 150 14 8 11				      |	  Honeydew 90 150 14 8 11
-  HoneydewClone 91 150 14 8 11				      |	  HoneydewClone 90 150 14 8 11
-  Honeydew 79 150 14 8 11				      |	  Honeydew 80 150 14 8 11
-  HoneydewClone 81 150 14 8 11				      |	  HoneydewClone 80 150 14 8 11
-  Honeydew 69 150 14 8 11				      |	  Honeydew 70 150 14 8 11
-  HoneydewClone 71 150 14 8 11				      |	  HoneydewClone 70 150 14 8 11
-  Honeydew 59 150 14 8 11				      |	  Honeydew 60 150 14 8 11
-  HoneydewClone 61 150 14 8 11				      |	  HoneydewClone 60 150 14 8 11
-  Honeydew 49 150 14 8 11				      |	  Honeydew 50 150 14 8 11
-  HoneydewClone 51 150 14 8 11				      |	  HoneydewClone 50 150 14 8 11
-  Honeydew 39 150 14 8 11				      |	  Honeydew 40 150 14 8 11
-  HoneydewClone 41 150 14 8 11				      |	  HoneydewClone 40 150 14 8 11
-  Honeydew 29 150 14 8 11				      |	  Honeydew 30 150 14 8 11
-  HoneydewClone 31 150 14 8 11				      |	  HoneydewClone 30 150 14 8 11
-  Honeydew 19 150 14 8 11				      |	  Honeydew 20 150 14 8 11
-  HoneydewClone 21 150 14 8 11				      |	  HoneydewClone 20 150 14 8 11
-  Honeydew 9 150 14 8 11				      |	  Honeydew 10 150 14 8 11
-  HoneydewClone 11 150 14 8 11				      |	  HoneydewClone 10 150 14 8 11
-  Honeydew 11 150 14 8 11				      |	  Honeydew 12 150 14 8 11
-  HoneydewClone -1 150 14 8 11				      |	  HoneydewClone -2 150 14 8 11
-  Israphel 77 90 12 17 1				      |	  Israphel 80 90 12 17 1
-  Israphel 65 90 12 18 1				      |	  Israphel 69 90 12 18 1
-  IsraphelClone 67 90 12 18 1				      |	  IsraphelClone 68 90 12 18 1
-  Israphel 52 90 12 19 1				      |	  Israphel 57 90 12 19 1
-  IsraphelClone 54 90 12 19 1				      |	  IsraphelClone 56 90 12 19 1
-  Israphel 39 90 12 20 1				      |	  Israphel 44 90 12 20 1
-  IsraphelClone 40 90 12 20 1				      |	  IsraphelClone 43 90 12 20 1
-  Israphel 25 90 12 21 1				      |	  Israphel 31 90 12 21 1
-  IsraphelClone 26 90 12 21 1				      |	  IsraphelClone 29 90 12 21 1
-  Israphel 10 90 12 22 1				      |	  Israphel 17 90 12 22 1
-  IsraphelClone 11 90 12 22 1				      |	  IsraphelClone 15 90 12 22 1
-  Israphel 12 90 12 23 1				      |	  Israphel 19 90 12 23 1
-  IsraphelClone -7 90 12 22 1				      |	  IsraphelClone -2 90 12 22 1
-  Father_BraeburnClone 80 90 4 12 20			      |	  Father_BraeburnClone 79 90 4 12 20
-  Father_Braeburn 63 90 4 12 20				      |	  Father_Braeburn 56 90 4 12 20
-  Father_BraeburnClone 70 90 4 12 20			      |	  Father_BraeburnClone 68 90 4 12 20
+							      <
+  Joshua 990 1000 10 80 10				      <
+  NORAD 745 750 30 40 1					      <
+							      <
+  Joshua 981 1000 10 80 10				      <
+  NORAD 747 750 30 40 1					      <
+							      <
+  Joshua 972 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 963 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 954 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 945 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 936 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 927 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 918 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 909 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 900 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 891 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 882 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 873 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 864 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 855 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 846 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 837 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 828 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 819 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 810 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 801 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 792 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 783 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 774 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 765 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 756 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 747 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 738 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 729 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 720 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 711 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 702 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 693 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 684 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 675 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 666 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 657 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 648 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 639 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 630 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 621 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 612 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 603 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 594 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 585 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 576 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 567 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 558 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 549 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 540 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 531 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 522 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 513 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 504 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 495 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 486 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 477 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 468 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 459 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 450 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 441 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 432 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 423 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 414 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 405 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 396 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 387 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 378 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 369 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 360 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 351 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 342 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 333 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 324 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 315 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 306 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 297 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 288 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 279 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 270 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 261 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 252 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 243 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 234 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 225 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 216 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 207 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 198 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 189 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 180 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 171 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 162 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 153 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 144 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 135 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 126 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 117 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 108 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 99 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 90 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 81 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 72 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 63 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 54 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 45 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 36 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 27 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 18 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 9 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+							      <
+  Joshua 0 1000 10 80 10				      <
+  NORAD 750 750 30 40 1					      <
+reset Joshua Success					      <
+reset NORAD Success					      <
+battle Honeydew HoneydewClone				      <
+							      <
+  Honeydew 150 150 14 8 11				      <
+  HoneydewClone 150 150 14 8 11				      <
+							      <
+  Honeydew 124 150 14 8 11				      <
+  HoneydewClone 126 150 14 8 11				      <
+							      <
+  Honeydew 110 150 14 8 11				      <
+  HoneydewClone 112 150 14 8 11				      <
+							      <
+  Honeydew 99 150 14 8 11				      <
+  HoneydewClone 101 150 14 8 11				      <
+							      <
+  Honeydew 89 150 14 8 11				      <
+  HoneydewClone 91 150 14 8 11				      <
+							      <
+  Honeydew 79 150 14 8 11				      <
+  HoneydewClone 81 150 14 8 11				      <
+							      <
+  Honeydew 69 150 14 8 11				      <
+  HoneydewClone 71 150 14 8 11				      <
+							      <
+  Honeydew 59 150 14 8 11				      <
+  HoneydewClone 61 150 14 8 11				      <
+							      <
+  Honeydew 49 150 14 8 11				      <
+  HoneydewClone 51 150 14 8 11				      <
+							      <
+  Honeydew 39 150 14 8 11				      <
+  HoneydewClone 41 150 14 8 11				      <
+							      <
+  Honeydew 29 150 14 8 11				      <
+  HoneydewClone 31 150 14 8 11				      <
+							      <
+  Honeydew 19 150 14 8 11				      <
+  HoneydewClone 21 150 14 8 11				      <
+							      <
+  Honeydew 9 150 14 8 11				      <
+  HoneydewClone 11 150 14 8 11				      <
+							      <
+  Honeydew 11 150 14 8 11				      <
+  HoneydewClone -1 150 14 8 11				      <
+reset Honeydew Success					      <
+reset HoneydewClone Success				      <
+battle Israphel IsraphelClone				      <
+							      <
+  Israphel 90 90 12 16 1				      <
+  IsraphelClone 90 90 12 16 1				      <
+							      <
+  Israphel 77 90 12 17 1				      <
+  IsraphelClone 79 90 12 17 1				      <
+							      <
+  Israphel 65 90 12 18 1				      <
+  IsraphelClone 67 90 12 18 1				      <
+							      <
+  Israphel 52 90 12 19 1				      <
+  IsraphelClone 54 90 12 19 1				      <
+							      <
+  Israphel 39 90 12 20 1				      <
+  IsraphelClone 40 90 12 20 1				      <
+							      <
+  Israphel 25 90 12 21 1				      <
+  IsraphelClone 26 90 12 21 1				      <
+							      <
+  Israphel 10 90 12 22 1				      <
+  IsraphelClone 11 90 12 22 1				      <
+							      <
+  Israphel 12 90 12 23 1				      <
+  IsraphelClone -7 90 12 22 1				      <
+reset Israphel Success					      <
+reset IsrahelClone NULL					      <
+battle Father_Braeburn Father_BraeburnClone		      <
+							      <
+  Father_Braeburn 90 90 4 12 20				      <
+  Father_BraeburnClone 90 90 4 12 20			      <
+							      <
+  Father_Braeburn 73 90 4 12 20				      <
+  Father_BraeburnClone 80 90 4 12 20			      <
+							      <
+  Father_Braeburn 63 90 4 12 20				      <
+  Father_BraeburnClone 70 90 4 12 20			      <
 							      <
   Father_Braeburn 53 90 4 12 20				      <
   Father_BraeburnClone 60 90 4 12 20			      <
-  Father_Braeburn 43 90 4 12 20				      |	  Father_Braeburn 39 90 4 12 20
-  Father_BraeburnClone 50 90 4 12 20			      |	  Father_BraeburnClone 57 90 4 12 20
-  Father_Braeburn 27 90 4 12 20				      |	  Father_Braeburn 22 90 4 12 20
-  Father_BraeburnClone 34 90 4 12 20			      |	  Father_BraeburnClone 46 90 4 12 20
-  Father_Braeburn 11 90 4 12 20				      |	  Father_Braeburn 5 90 4 12 20
-  Father_BraeburnClone 18 90 4 12 20			      |	  Father_BraeburnClone 35 90 4 12 20
-  Father_Braeburn -5 90 4 12 20				      |	  Father_Braeburn -12 90 4 12 20
-  Father_BraeburnClone 2 90 4 12 20			      |	  Father_BraeburnClone 24 90 4 12 20
-  Israphel 90 90 12 16 1				      |	  Israphel 19 90 12 23 1
+							      <
+  Father_Braeburn 43 90 4 12 20				      <
+  Father_BraeburnClone 50 90 4 12 20			      <
+							      <
+  Father_Braeburn 27 90 4 12 20				      <
+  Father_BraeburnClone 34 90 4 12 20			      <
+							      <
+  Father_Braeburn 11 90 4 12 20				      <
+  Father_BraeburnClone 18 90 4 12 20			      <
+							      <
+  Father_Braeburn -5 90 4 12 20				      <
+  Father_BraeburnClone 2 90 4 12 20			      <
+reset Father_Braeburn Success				      <
+reset Father_BraeburnClone Success			      <
+battle Honeydew Israphel				      <
+							      <
+  Honeydew 150 150 14 8 11				      <
+  Israphel 90 90 12 16 1				      <
 							      <
   Honeydew 135 150 14 8 11				      <
   Israphel 68 90 12 17 1				      <

@@ -8,7 +8,8 @@ int Archer::getDamage() {
 	return damage;
 }
 void Archer::reset() {
-	speed = speed;
+	hp = maxHP;
+	speed = originalSpeed;
 }
 bool Archer::useAbility() {
 	speed = speed + 1;

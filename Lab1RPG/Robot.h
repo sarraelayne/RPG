@@ -14,7 +14,4 @@ public:
 protected:
     int damage;
     int energy;
-    int bonus_damage;
-    int current_energy;
-    int maximum_energy;
 };

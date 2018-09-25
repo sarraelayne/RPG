@@ -29,4 +29,8 @@ protected:
     int damage;
     int energy;
     int mana;
+    int originalSpeed;
+    int bonus_damage;
+    int current_energy;
+    int maximum_energy;
 };

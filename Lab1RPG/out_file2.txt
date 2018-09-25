@@ -289,14 +289,14 @@ reset Spryte Success
 reset Vale Success
 reset Spen00 Success
 getFighter Josh
-  Josh 0 100 3 4 5
+  Josh 100 100 3 4 5
 getFighter Kel
-  Kel 25 100 3 4 5
+  Kel 100 100 3 4 5
 getFighter Nebula
   Nebula 100 100 3 4 5
 getFighter Spryte
-  Spryte 50 100 3 4 5
+  Spryte 100 100 3 4 5
 getFighter Vale
   Vale 100 100 3 4 5
 getFighter Spen00
-  Spen00 32 100 3 4 5
+  Spen00 100 100 3 4 5

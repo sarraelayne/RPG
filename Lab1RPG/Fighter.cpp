@@ -4,6 +4,7 @@ using namespace std;
 Fighter::Fighter(string inName, int inHP, int inStrength, int inSpeed, int inMagic) {
     name = inName;
     speed = inSpeed;
+    originalSpeed = inSpeed;
     strength = inStrength;
     hp = inHP;
     magic = inMagic;
@@ -35,9 +36,6 @@ int Fighter::getMagic() const {
 	return magic;
 }
 
-int Fighter::getDamage() {
-	return damage;
-}
 void Fighter::takeDamage(int damage) {
 	damage = damage - (0.25 * speed);
 	hp = hp - damage;
