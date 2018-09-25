@@ -1,4 +1,6 @@
 #include "Robot.h"
+#include <string>
+#include <iostream>
 using namespace std;
 
 int Robot::getDamage() {

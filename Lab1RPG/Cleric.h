@@ -1,5 +1,7 @@
 #pragma once
 #include "Fighter.h"
+#include <string>
+#include <iostream>
 using namespace std;
 
 class Cleric: public Fighter {

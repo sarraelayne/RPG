@@ -1,4 +1,6 @@
 #include "Archer.h"
+#include <string>
+#include <iostream>
 using namespace std;
 
 int Archer::getDamage() {

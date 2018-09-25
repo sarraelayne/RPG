@@ -1,6 +1,8 @@
 #ifndef ARCHER_H
 #define ARCHER_H
 #include "Fighter.h"
+#include <string>
+#include <iostream>
 using namespace std;
 
 class Archer: public Fighter {

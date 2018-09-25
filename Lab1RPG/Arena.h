@@ -8,6 +8,8 @@
 #include "Robot.h"
 #include <vector>
 #include <sstream>
+#include <string>
+#include <iostream>
 using namespace std;
 
 class Arena: public ArenaInterface{

@@ -1,5 +1,7 @@
 #include "Arena.h"
 #include <vector>
+#include <string>
+#include <iostream>
 using namespace std;
 
 
@@ -7,10 +9,10 @@ bool Arena::addFighter(string info) {
     stringstream ss(info);
     string name;
     string type;
-    string hp;
-    string strength;
-    string speed;
-    string magic;
+    int hp;
+    int strength;
+    int speed;
+    int magic;
     
     if (ss >> name >> type >> hp >> strength >> speed >> magic) {
         cout << "Name: " << name << endl;
