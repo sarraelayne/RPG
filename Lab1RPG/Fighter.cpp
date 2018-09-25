@@ -2,12 +2,12 @@
 using namespace std;
 
 Fighter::Fighter(string inName, int inHP, int inStrength, int inSpeed, int inMagic) {
-    cout << "Fighter constructor";
     name = inName;
     speed = inSpeed;
     strength = inStrength;
     hp = inHP;
     magic = inMagic;
+    maxHP = inHP;
 }
 Fighter::~Fighter() {
 	cout << "in Fighter default";
@@ -40,6 +40,7 @@ int Fighter::getDamage() {
 }
 void Fighter::takeDamage(int damage) {
 	damage = damage - (0.25 * speed);
+	hp = hp - damage;
 }
 void Fighter::regenerate() {
 	hp = hp + strength/6;

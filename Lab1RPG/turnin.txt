@@ -1,0 +1,1150 @@
+getSize 0
+getFighter Josh NULL
+addFighter Josh A 2 3 4 5 Added
+getSize 1
+getFighter Josh
+  Josh 2 2 3 4 5
+removeFighter Josh True
+getFighter Josh NULL
+getSize 0
+getSize 0
+addFighter Josh A 100 3 4 5 Added
+addFighter Kel C 100 3 4 5 Added
+addFighter Nebula R 100 3 4 5 Added
+addFighter Spryte C 100 3 4 5 Added
+addFighter Vale R 100 3 4 5 Added
+addFighter Spen00 A 100 3 4 5 Added
+getSize 6
+battle Josh Kel
+
+  Josh 100 100 3 4 5
+  Kel 100 100 3 4 5
+
+  Josh 96 100 3 4 5
+  Kel 97 100 3 4 5
+
+  Josh 92 100 3 4 5
+  Kel 94 100 3 4 5
+
+  Josh 88 100 3 4 5
+  Kel 91 100 3 4 5
+
+  Josh 84 100 3 4 5
+  Kel 88 100 3 4 5
+
+  Josh 80 100 3 4 5
+  Kel 85 100 3 4 5
+
+  Josh 76 100 3 4 5
+  Kel 82 100 3 4 5
+
+  Josh 72 100 3 4 5
+  Kel 79 100 3 4 5
+
+  Josh 68 100 3 4 5
+  Kel 76 100 3 4 5
+
+  Josh 64 100 3 4 5
+  Kel 73 100 3 4 5
+
+  Josh 60 100 3 4 5
+  Kel 70 100 3 4 5
+
+  Josh 56 100 3 4 5
+  Kel 67 100 3 4 5
+
+  Josh 52 100 3 4 5
+  Kel 64 100 3 4 5
+
+  Josh 48 100 3 4 5
+  Kel 61 100 3 4 5
+
+  Josh 44 100 3 4 5
+  Kel 58 100 3 4 5
+
+  Josh 40 100 3 4 5
+  Kel 55 100 3 4 5
+
+  Josh 36 100 3 4 5
+  Kel 52 100 3 4 5
+
+  Josh 32 100 3 4 5
+  Kel 49 100 3 4 5
+
+  Josh 28 100 3 4 5
+  Kel 46 100 3 4 5
+
+  Josh 24 100 3 4 5
+  Kel 43 100 3 4 5
+
+  Josh 20 100 3 4 5
+  Kel 40 100 3 4 5
+
+  Josh 16 100 3 4 5
+  Kel 37 100 3 4 5
+
+  Josh 12 100 3 4 5
+  Kel 34 100 3 4 5
+
+  Josh 8 100 3 4 5
+  Kel 31 100 3 4 5
+
+  Josh 4 100 3 4 5
+  Kel 28 100 3 4 5
+
+  Josh 0 100 3 4 5
+  Kel 25 100 3 4 5
+battle Nebula Spryte
+
+  Nebula 100 100 3 4 5
+  Spryte 100 100 3 4 5
+
+  Nebula 96 100 3 4 5
+  Spryte 98 100 3 4 5
+
+  Nebula 92 100 3 4 5
+  Spryte 96 100 3 4 5
+
+  Nebula 88 100 3 4 5
+  Spryte 94 100 3 4 5
+
+  Nebula 84 100 3 4 5
+  Spryte 92 100 3 4 5
+
+  Nebula 80 100 3 4 5
+  Spryte 90 100 3 4 5
+
+  Nebula 76 100 3 4 5
+  Spryte 88 100 3 4 5
+
+  Nebula 72 100 3 4 5
+  Spryte 86 100 3 4 5
+
+  Nebula 68 100 3 4 5
+  Spryte 84 100 3 4 5
+
+  Nebula 64 100 3 4 5
+  Spryte 82 100 3 4 5
+
+  Nebula 60 100 3 4 5
+  Spryte 80 100 3 4 5
+
+  Nebula 56 100 3 4 5
+  Spryte 78 100 3 4 5
+
+  Nebula 52 100 3 4 5
+  Spryte 76 100 3 4 5
+
+  Nebula 48 100 3 4 5
+  Spryte 74 100 3 4 5
+
+  Nebula 44 100 3 4 5
+  Spryte 72 100 3 4 5
+
+  Nebula 40 100 3 4 5
+  Spryte 70 100 3 4 5
+
+  Nebula 36 100 3 4 5
+  Spryte 68 100 3 4 5
+
+  Nebula 32 100 3 4 5
+  Spryte 66 100 3 4 5
+
+  Nebula 28 100 3 4 5
+  Spryte 64 100 3 4 5
+
+  Nebula 24 100 3 4 5
+  Spryte 62 100 3 4 5
+
+  Nebula 20 100 3 4 5
+  Spryte 60 100 3 4 5
+
+  Nebula 16 100 3 4 5
+  Spryte 58 100 3 4 5
+
+  Nebula 12 100 3 4 5
+  Spryte 56 100 3 4 5
+
+  Nebula 8 100 3 4 5
+  Spryte 54 100 3 4 5
+
+  Nebula 4 100 3 4 5
+  Spryte 52 100 3 4 5
+
+  Nebula 0 100 3 4 5
+  Spryte 50 100 3 4 5
+battle Vale Spen00
+
+  Vale 100 100 3 4 5
+  Spen00 100 100 3 4 5
+
+  Vale 97 100 3 4 5
+  Spen00 98 100 3 4 5
+
+  Vale 94 100 3 4 5
+  Spen00 96 100 3 4 5
+
+  Vale 91 100 3 4 5
+  Spen00 94 100 3 4 5
+
+  Vale 88 100 3 4 5
+  Spen00 92 100 3 4 5
+
+  Vale 85 100 3 4 5
+  Spen00 90 100 3 4 5
+
+  Vale 82 100 3 4 5
+  Spen00 88 100 3 4 5
+
+  Vale 79 100 3 4 5
+  Spen00 86 100 3 4 5
+
+  Vale 76 100 3 4 5
+  Spen00 84 100 3 4 5
+
+  Vale 73 100 3 4 5
+  Spen00 82 100 3 4 5
+
+  Vale 70 100 3 4 5
+  Spen00 80 100 3 4 5
+
+  Vale 67 100 3 4 5
+  Spen00 78 100 3 4 5
+
+  Vale 64 100 3 4 5
+  Spen00 76 100 3 4 5
+
+  Vale 61 100 3 4 5
+  Spen00 74 100 3 4 5
+
+  Vale 58 100 3 4 5
+  Spen00 72 100 3 4 5
+
+  Vale 55 100 3 4 5
+  Spen00 70 100 3 4 5
+
+  Vale 52 100 3 4 5
+  Spen00 68 100 3 4 5
+
+  Vale 49 100 3 4 5
+  Spen00 66 100 3 4 5
+
+  Vale 46 100 3 4 5
+  Spen00 64 100 3 4 5
+
+  Vale 43 100 3 4 5
+  Spen00 62 100 3 4 5
+
+  Vale 40 100 3 4 5
+  Spen00 60 100 3 4 5
+
+  Vale 37 100 3 4 5
+  Spen00 58 100 3 4 5
+
+  Vale 34 100 3 4 5
+  Spen00 56 100 3 4 5
+
+  Vale 31 100 3 4 5
+  Spen00 54 100 3 4 5
+
+  Vale 28 100 3 4 5
+  Spen00 52 100 3 4 5
+
+  Vale 25 100 3 4 5
+  Spen00 50 100 3 4 5
+
+  Vale 22 100 3 4 5
+  Spen00 48 100 3 4 5
+
+  Vale 19 100 3 4 5
+  Spen00 46 100 3 4 5
+
+  Vale 16 100 3 4 5
+  Spen00 44 100 3 4 5
+
+  Vale 13 100 3 4 5
+  Spen00 42 100 3 4 5
+
+  Vale 10 100 3 4 5
+  Spen00 40 100 3 4 5
+
+  Vale 7 100 3 4 5
+  Spen00 38 100 3 4 5
+
+  Vale 4 100 3 4 5
+  Spen00 36 100 3 4 5
+
+  Vale 1 100 3 4 5
+  Spen00 34 100 3 4 5
+
+  Vale -2 100 3 4 5
+  Spen00 32 100 3 4 5
+getFighter Josh
+  Josh 0 100 3 4 5
+getFighter Kel
+  Kel 25 100 3 4 5
+getFighter Nebula
+  Nebula 0 100 3 4 5
+getFighter Spryte
+  Spryte 50 100 3 4 5
+getFighter Vale
+  Vale -2 100 3 4 5
+getFighter Spen00
+  Spen00 32 100 3 4 5
+reset Josh Success
+reset Kel Success
+reset Nebula Success
+reset Spryte Success
+reset Vale Success
+reset Spen00 Success
+getFighter Josh
+  Josh 0 100 3 4 5
+getFighter Kel
+  Kel 25 100 3 4 5
+getFighter Nebula
+  Nebula 100 100 3 4 5
+getFighter Spryte
+  Spryte 50 100 3 4 5
+getFighter Vale
+  Vale 100 100 3 4 5
+getFighter Spen00
+  Spen00 32 100 3 4 5
+getSize 0
+addFighter Josh A 100 3 4 5 Added
+addFighter Kel C 100 3 4 5 Added
+addFighter Nebula R 100 3 4 5 Added
+addFighter Spryte C 100 3 4 5 Added
+addFighter Vale R 100 3 4 5 Added
+addFighter Spen00 A 100 3 4 5 Added
+reset Josh Success
+reset Kel Success
+reset Nebula Success
+reset Spryte Success
+reset Vale Success
+reset Spen00 Success
+getSize 6
+battle Josh Kel
+
+  Josh 100 100 3 4 5
+  Kel 100 100 3 4 5
+
+  Josh 96 100 3 4 5
+  Kel 97 100 3 4 5
+
+  Josh 92 100 3 4 5
+  Kel 94 100 3 4 5
+
+  Josh 88 100 3 4 5
+  Kel 91 100 3 4 5
+
+  Josh 84 100 3 4 5
+  Kel 88 100 3 4 5
+
+  Josh 80 100 3 4 5
+  Kel 85 100 3 4 5
+
+  Josh 76 100 3 4 5
+  Kel 82 100 3 4 5
+
+  Josh 72 100 3 4 5
+  Kel 79 100 3 4 5
+
+  Josh 68 100 3 4 5
+  Kel 76 100 3 4 5
+
+  Josh 64 100 3 4 5
+  Kel 73 100 3 4 5
+
+  Josh 60 100 3 4 5
+  Kel 70 100 3 4 5
+
+  Josh 56 100 3 4 5
+  Kel 67 100 3 4 5
+
+  Josh 52 100 3 4 5
+  Kel 64 100 3 4 5
+
+  Josh 48 100 3 4 5
+  Kel 61 100 3 4 5
+
+  Josh 44 100 3 4 5
+  Kel 58 100 3 4 5
+
+  Josh 40 100 3 4 5
+  Kel 55 100 3 4 5
+
+  Josh 36 100 3 4 5
+  Kel 52 100 3 4 5
+
+  Josh 32 100 3 4 5
+  Kel 49 100 3 4 5
+
+  Josh 28 100 3 4 5
+  Kel 46 100 3 4 5
+
+  Josh 24 100 3 4 5
+  Kel 43 100 3 4 5
+
+  Josh 20 100 3 4 5
+  Kel 40 100 3 4 5
+
+  Josh 16 100 3 4 5
+  Kel 37 100 3 4 5
+
+  Josh 12 100 3 4 5
+  Kel 34 100 3 4 5
+
+  Josh 8 100 3 4 5
+  Kel 31 100 3 4 5
+
+  Josh 4 100 3 4 5
+  Kel 28 100 3 4 5
+
+  Josh 0 100 3 4 5
+  Kel 25 100 3 4 5
+battle Nebula Spryte
+
+  Nebula 100 100 3 4 5
+  Spryte 100 100 3 4 5
+
+  Nebula 96 100 3 4 5
+  Spryte 98 100 3 4 5
+
+  Nebula 92 100 3 4 5
+  Spryte 96 100 3 4 5
+
+  Nebula 88 100 3 4 5
+  Spryte 94 100 3 4 5
+
+  Nebula 84 100 3 4 5
+  Spryte 92 100 3 4 5
+
+  Nebula 80 100 3 4 5
+  Spryte 90 100 3 4 5
+
+  Nebula 76 100 3 4 5
+  Spryte 88 100 3 4 5
+
+  Nebula 72 100 3 4 5
+  Spryte 86 100 3 4 5
+
+  Nebula 68 100 3 4 5
+  Spryte 84 100 3 4 5
+
+  Nebula 64 100 3 4 5
+  Spryte 82 100 3 4 5
+
+  Nebula 60 100 3 4 5
+  Spryte 80 100 3 4 5
+
+  Nebula 56 100 3 4 5
+  Spryte 78 100 3 4 5
+
+  Nebula 52 100 3 4 5
+  Spryte 76 100 3 4 5
+
+  Nebula 48 100 3 4 5
+  Spryte 74 100 3 4 5
+
+  Nebula 44 100 3 4 5
+  Spryte 72 100 3 4 5
+
+  Nebula 40 100 3 4 5
+  Spryte 70 100 3 4 5
+
+  Nebula 36 100 3 4 5
+  Spryte 68 100 3 4 5
+
+  Nebula 32 100 3 4 5
+  Spryte 66 100 3 4 5
+
+  Nebula 28 100 3 4 5
+  Spryte 64 100 3 4 5
+
+  Nebula 24 100 3 4 5
+  Spryte 62 100 3 4 5
+
+  Nebula 20 100 3 4 5
+  Spryte 60 100 3 4 5
+
+  Nebula 16 100 3 4 5
+  Spryte 58 100 3 4 5
+
+  Nebula 12 100 3 4 5
+  Spryte 56 100 3 4 5
+
+  Nebula 8 100 3 4 5
+  Spryte 54 100 3 4 5
+
+  Nebula 4 100 3 4 5
+  Spryte 52 100 3 4 5
+
+  Nebula 0 100 3 4 5
+  Spryte 50 100 3 4 5
+battle Vale Spen00
+
+  Vale 100 100 3 4 5
+  Spen00 100 100 3 4 5
+
+  Vale 97 100 3 4 5
+  Spen00 98 100 3 4 5
+
+  Vale 94 100 3 4 5
+  Spen00 96 100 3 4 5
+
+  Vale 91 100 3 4 5
+  Spen00 94 100 3 4 5
+
+  Vale 88 100 3 4 5
+  Spen00 92 100 3 4 5
+
+  Vale 85 100 3 4 5
+  Spen00 90 100 3 4 5
+
+  Vale 82 100 3 4 5
+  Spen00 88 100 3 4 5
+
+  Vale 79 100 3 4 5
+  Spen00 86 100 3 4 5
+
+  Vale 76 100 3 4 5
+  Spen00 84 100 3 4 5
+
+  Vale 73 100 3 4 5
+  Spen00 82 100 3 4 5
+
+  Vale 70 100 3 4 5
+  Spen00 80 100 3 4 5
+
+  Vale 67 100 3 4 5
+  Spen00 78 100 3 4 5
+
+  Vale 64 100 3 4 5
+  Spen00 76 100 3 4 5
+
+  Vale 61 100 3 4 5
+  Spen00 74 100 3 4 5
+
+  Vale 58 100 3 4 5
+  Spen00 72 100 3 4 5
+
+  Vale 55 100 3 4 5
+  Spen00 70 100 3 4 5
+
+  Vale 52 100 3 4 5
+  Spen00 68 100 3 4 5
+
+  Vale 49 100 3 4 5
+  Spen00 66 100 3 4 5
+
+  Vale 46 100 3 4 5
+  Spen00 64 100 3 4 5
+
+  Vale 43 100 3 4 5
+  Spen00 62 100 3 4 5
+
+  Vale 40 100 3 4 5
+  Spen00 60 100 3 4 5
+
+  Vale 37 100 3 4 5
+  Spen00 58 100 3 4 5
+
+  Vale 34 100 3 4 5
+  Spen00 56 100 3 4 5
+
+  Vale 31 100 3 4 5
+  Spen00 54 100 3 4 5
+
+  Vale 28 100 3 4 5
+  Spen00 52 100 3 4 5
+
+  Vale 25 100 3 4 5
+  Spen00 50 100 3 4 5
+
+  Vale 22 100 3 4 5
+  Spen00 48 100 3 4 5
+
+  Vale 19 100 3 4 5
+  Spen00 46 100 3 4 5
+
+  Vale 16 100 3 4 5
+  Spen00 44 100 3 4 5
+
+  Vale 13 100 3 4 5
+  Spen00 42 100 3 4 5
+
+  Vale 10 100 3 4 5
+  Spen00 40 100 3 4 5
+
+  Vale 7 100 3 4 5
+  Spen00 38 100 3 4 5
+
+  Vale 4 100 3 4 5
+  Spen00 36 100 3 4 5
+
+  Vale 1 100 3 4 5
+  Spen00 34 100 3 4 5
+
+  Vale -2 100 3 4 5
+  Spen00 32 100 3 4 5
+getFighter Josh
+  Josh 0 100 3 4 5
+getFighter Kel
+  Kel 25 100 3 4 5
+getFighter Nebula
+  Nebula 0 100 3 4 5
+getFighter Spryte
+  Spryte 50 100 3 4 5
+getFighter Vale
+  Vale -2 100 3 4 5
+getFighter Spen00
+  Spen00 32 100 3 4 5
+removeFighter Josh True
+removeFighter Kel True
+removeFighter Nebula True
+removeFighter Spryte True
+removeFighter Vale True
+removeFighter Spen00 True
+removeFighter Al False
+getSize 0
+removeFighter John False
+addFighter Jason A 1 1 1 Invalid
+addFighter Yason A 1 1 m 1 Invalid
+addFighter Hason 1 1 1 1 Invalid
+addFighter Lason A 1 1 1 1 1 Added
+addFighter Mason A 1 2 3 4 Added
+addFighter Mason C 5 6 7 8 Added
+removeFighter Mason True
+getSize 2
+getSize 0
+addFighter Fumblemore C 100 10 10 100 Added
+addFighter Creeper R 10 100 1 1 Added
+addFighter Cow R 10 2 1 3 Added
+addFighter Sheep A 5 1 1 1 Added
+addFighter Tinman R 100 5 1 7 Added
+addFighter Spacker R 50 1 1 1 Added
+addFighter Joshua R 1000 10 80 10 Added
+addFighter NORAD R 750 30 40 1 Added
+addFighter Honeydew R 150 14 8 11 Added
+addFighter HoneydewClone R 150 14 8 11 Added
+addFighter Israphel A 90 12 16 1 Added
+addFighter IsraphelClone A 90 12 16 1 Added
+addFighter Father_Braeburn C 90 4 12 20 Added
+addFighter Father_BraeburnClone C 90 4 12 20 Added
+battle Fumblemore Creeper
+
+  Fumblemore 100 100 10 10 100
+  Creeper 10 10 100 1 1
+
+  Fumblemore 100 100 10 10 100
+  Creeper -89 10 100 1 1
+reset Fumblemore Success
+reset Creeper Success
+battle Creeper Sheep
+
+  Creeper 10 10 100 1 1
+  Sheep 5 5 1 1 1
+
+  Creeper 26 10 100 1 1
+  Sheep -94 5 1 1 1
+reset Creeper Success
+reset Sheep Success
+battle Cow Sheep
+
+  Cow 10 10 2 1 3
+  Sheep -94 5 1 1 1
+reset Cow Success
+reset Sheep Success
+battle Tinman Spacker
+
+  Tinman 100 100 5 1 7
+  Spacker 50 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 46 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 42 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 38 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 34 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 30 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 26 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 22 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 18 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 14 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 10 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 6 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker 2 50 1 1 1
+
+  Tinman 100 100 5 1 7
+  Spacker -2 50 1 1 1
+reset Tinman Success
+reset Spacker Success
+battle Joshua NORAD
+
+  Joshua 1000 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 991 1000 10 80 10
+  NORAD 755 750 30 40 1
+
+  Joshua 982 1000 10 80 10
+  NORAD 760 750 30 40 1
+
+  Joshua 973 1000 10 80 10
+  NORAD 765 750 30 40 1
+
+  Joshua 964 1000 10 80 10
+  NORAD 770 750 30 40 1
+
+  Joshua 955 1000 10 80 10
+  NORAD 775 750 30 40 1
+
+  Joshua 946 1000 10 80 10
+  NORAD 780 750 30 40 1
+
+  Joshua 937 1000 10 80 10
+  NORAD 785 750 30 40 1
+
+  Joshua 928 1000 10 80 10
+  NORAD 790 750 30 40 1
+
+  Joshua 919 1000 10 80 10
+  NORAD 795 750 30 40 1
+
+  Joshua 910 1000 10 80 10
+  NORAD 800 750 30 40 1
+
+  Joshua 901 1000 10 80 10
+  NORAD 805 750 30 40 1
+
+  Joshua 892 1000 10 80 10
+  NORAD 810 750 30 40 1
+
+  Joshua 883 1000 10 80 10
+  NORAD 815 750 30 40 1
+
+  Joshua 874 1000 10 80 10
+  NORAD 820 750 30 40 1
+
+  Joshua 865 1000 10 80 10
+  NORAD 825 750 30 40 1
+
+  Joshua 856 1000 10 80 10
+  NORAD 830 750 30 40 1
+
+  Joshua 847 1000 10 80 10
+  NORAD 835 750 30 40 1
+
+  Joshua 838 1000 10 80 10
+  NORAD 840 750 30 40 1
+
+  Joshua 829 1000 10 80 10
+  NORAD 845 750 30 40 1
+
+  Joshua 820 1000 10 80 10
+  NORAD 850 750 30 40 1
+
+  Joshua 811 1000 10 80 10
+  NORAD 855 750 30 40 1
+
+  Joshua 802 1000 10 80 10
+  NORAD 860 750 30 40 1
+
+  Joshua 793 1000 10 80 10
+  NORAD 865 750 30 40 1
+
+  Joshua 784 1000 10 80 10
+  NORAD 870 750 30 40 1
+
+  Joshua 775 1000 10 80 10
+  NORAD 875 750 30 40 1
+
+  Joshua 766 1000 10 80 10
+  NORAD 880 750 30 40 1
+
+  Joshua 757 1000 10 80 10
+  NORAD 885 750 30 40 1
+
+  Joshua 748 1000 10 80 10
+  NORAD 890 750 30 40 1
+
+  Joshua 739 1000 10 80 10
+  NORAD 895 750 30 40 1
+
+  Joshua 730 1000 10 80 10
+  NORAD 900 750 30 40 1
+
+  Joshua 721 1000 10 80 10
+  NORAD 905 750 30 40 1
+
+  Joshua 712 1000 10 80 10
+  NORAD 910 750 30 40 1
+
+  Joshua 703 1000 10 80 10
+  NORAD 915 750 30 40 1
+
+  Joshua 694 1000 10 80 10
+  NORAD 920 750 30 40 1
+
+  Joshua 685 1000 10 80 10
+  NORAD 925 750 30 40 1
+
+  Joshua 676 1000 10 80 10
+  NORAD 930 750 30 40 1
+
+  Joshua 667 1000 10 80 10
+  NORAD 935 750 30 40 1
+
+  Joshua 658 1000 10 80 10
+  NORAD 940 750 30 40 1
+
+  Joshua 649 1000 10 80 10
+  NORAD 945 750 30 40 1
+
+  Joshua 640 1000 10 80 10
+  NORAD 950 750 30 40 1
+
+  Joshua 631 1000 10 80 10
+  NORAD 955 750 30 40 1
+
+  Joshua 622 1000 10 80 10
+  NORAD 960 750 30 40 1
+
+  Joshua 613 1000 10 80 10
+  NORAD 965 750 30 40 1
+
+  Joshua 604 1000 10 80 10
+  NORAD 970 750 30 40 1
+
+  Joshua 595 1000 10 80 10
+  NORAD 975 750 30 40 1
+
+  Joshua 586 1000 10 80 10
+  NORAD 980 750 30 40 1
+
+  Joshua 577 1000 10 80 10
+  NORAD 985 750 30 40 1
+
+  Joshua 568 1000 10 80 10
+  NORAD 990 750 30 40 1
+
+  Joshua 559 1000 10 80 10
+  NORAD 995 750 30 40 1
+
+  Joshua 550 1000 10 80 10
+  NORAD 1000 750 30 40 1
+
+  Joshua 541 1000 10 80 10
+  NORAD 1005 750 30 40 1
+
+  Joshua 532 1000 10 80 10
+  NORAD 1010 750 30 40 1
+
+  Joshua 523 1000 10 80 10
+  NORAD 1015 750 30 40 1
+
+  Joshua 514 1000 10 80 10
+  NORAD 1020 750 30 40 1
+
+  Joshua 505 1000 10 80 10
+  NORAD 1025 750 30 40 1
+
+  Joshua 496 1000 10 80 10
+  NORAD 1030 750 30 40 1
+
+  Joshua 487 1000 10 80 10
+  NORAD 1035 750 30 40 1
+
+  Joshua 478 1000 10 80 10
+  NORAD 1040 750 30 40 1
+
+  Joshua 469 1000 10 80 10
+  NORAD 1045 750 30 40 1
+
+  Joshua 460 1000 10 80 10
+  NORAD 1050 750 30 40 1
+
+  Joshua 451 1000 10 80 10
+  NORAD 1055 750 30 40 1
+
+  Joshua 442 1000 10 80 10
+  NORAD 1060 750 30 40 1
+
+  Joshua 433 1000 10 80 10
+  NORAD 1065 750 30 40 1
+
+  Joshua 424 1000 10 80 10
+  NORAD 1070 750 30 40 1
+
+  Joshua 415 1000 10 80 10
+  NORAD 1075 750 30 40 1
+
+  Joshua 406 1000 10 80 10
+  NORAD 1080 750 30 40 1
+
+  Joshua 397 1000 10 80 10
+  NORAD 1085 750 30 40 1
+
+  Joshua 388 1000 10 80 10
+  NORAD 1090 750 30 40 1
+
+  Joshua 379 1000 10 80 10
+  NORAD 1095 750 30 40 1
+
+  Joshua 370 1000 10 80 10
+  NORAD 1100 750 30 40 1
+
+  Joshua 361 1000 10 80 10
+  NORAD 1105 750 30 40 1
+
+  Joshua 352 1000 10 80 10
+  NORAD 1110 750 30 40 1
+
+  Joshua 343 1000 10 80 10
+  NORAD 1115 750 30 40 1
+
+  Joshua 334 1000 10 80 10
+  NORAD 1120 750 30 40 1
+
+  Joshua 325 1000 10 80 10
+  NORAD 1125 750 30 40 1
+
+  Joshua 316 1000 10 80 10
+  NORAD 1130 750 30 40 1
+
+  Joshua 307 1000 10 80 10
+  NORAD 1135 750 30 40 1
+
+  Joshua 298 1000 10 80 10
+  NORAD 1140 750 30 40 1
+
+  Joshua 289 1000 10 80 10
+  NORAD 1145 750 30 40 1
+
+  Joshua 280 1000 10 80 10
+  NORAD 1150 750 30 40 1
+
+  Joshua 271 1000 10 80 10
+  NORAD 1155 750 30 40 1
+
+  Joshua 262 1000 10 80 10
+  NORAD 1160 750 30 40 1
+
+  Joshua 253 1000 10 80 10
+  NORAD 1165 750 30 40 1
+
+  Joshua 244 1000 10 80 10
+  NORAD 1170 750 30 40 1
+
+  Joshua 235 1000 10 80 10
+  NORAD 1175 750 30 40 1
+
+  Joshua 226 1000 10 80 10
+  NORAD 1180 750 30 40 1
+
+  Joshua 217 1000 10 80 10
+  NORAD 1185 750 30 40 1
+
+  Joshua 208 1000 10 80 10
+  NORAD 1190 750 30 40 1
+
+  Joshua 199 1000 10 80 10
+  NORAD 1195 750 30 40 1
+
+  Joshua 190 1000 10 80 10
+  NORAD 1200 750 30 40 1
+
+  Joshua 181 1000 10 80 10
+  NORAD 1205 750 30 40 1
+
+  Joshua 172 1000 10 80 10
+  NORAD 1210 750 30 40 1
+
+  Joshua 163 1000 10 80 10
+  NORAD 1215 750 30 40 1
+
+  Joshua 154 1000 10 80 10
+  NORAD 1220 750 30 40 1
+
+  Joshua 145 1000 10 80 10
+  NORAD 1225 750 30 40 1
+
+  Joshua 136 1000 10 80 10
+  NORAD 1230 750 30 40 1
+
+  Joshua 127 1000 10 80 10
+  NORAD 1235 750 30 40 1
+
+  Joshua 118 1000 10 80 10
+  NORAD 1240 750 30 40 1
+
+  Joshua 109 1000 10 80 10
+  NORAD 1245 750 30 40 1
+
+  Joshua 100 1000 10 80 10
+  NORAD 1250 750 30 40 1
+
+  Joshua 91 1000 10 80 10
+  NORAD 1255 750 30 40 1
+
+  Joshua 82 1000 10 80 10
+  NORAD 1260 750 30 40 1
+
+  Joshua 73 1000 10 80 10
+  NORAD 1265 750 30 40 1
+
+  Joshua 64 1000 10 80 10
+  NORAD 1270 750 30 40 1
+
+  Joshua 55 1000 10 80 10
+  NORAD 1275 750 30 40 1
+
+  Joshua 46 1000 10 80 10
+  NORAD 1280 750 30 40 1
+
+  Joshua 37 1000 10 80 10
+  NORAD 1285 750 30 40 1
+
+  Joshua 28 1000 10 80 10
+  NORAD 1290 750 30 40 1
+
+  Joshua 19 1000 10 80 10
+  NORAD 1295 750 30 40 1
+
+  Joshua 10 1000 10 80 10
+  NORAD 1300 750 30 40 1
+
+  Joshua 1 1000 10 80 10
+  NORAD 1305 750 30 40 1
+
+  Joshua -8 1000 10 80 10
+  NORAD 1310 750 30 40 1
+reset Joshua Success
+reset NORAD Success
+battle Honeydew HoneydewClone
+
+  Honeydew 150 150 14 8 11
+  HoneydewClone 150 150 14 8 11
+
+  Honeydew 140 150 14 8 11
+  HoneydewClone 140 150 14 8 11
+
+  Honeydew 130 150 14 8 11
+  HoneydewClone 130 150 14 8 11
+
+  Honeydew 120 150 14 8 11
+  HoneydewClone 120 150 14 8 11
+
+  Honeydew 110 150 14 8 11
+  HoneydewClone 110 150 14 8 11
+
+  Honeydew 100 150 14 8 11
+  HoneydewClone 100 150 14 8 11
+
+  Honeydew 90 150 14 8 11
+  HoneydewClone 90 150 14 8 11
+
+  Honeydew 80 150 14 8 11
+  HoneydewClone 80 150 14 8 11
+
+  Honeydew 70 150 14 8 11
+  HoneydewClone 70 150 14 8 11
+
+  Honeydew 60 150 14 8 11
+  HoneydewClone 60 150 14 8 11
+
+  Honeydew 50 150 14 8 11
+  HoneydewClone 50 150 14 8 11
+
+  Honeydew 40 150 14 8 11
+  HoneydewClone 40 150 14 8 11
+
+  Honeydew 30 150 14 8 11
+  HoneydewClone 30 150 14 8 11
+
+  Honeydew 20 150 14 8 11
+  HoneydewClone 20 150 14 8 11
+
+  Honeydew 10 150 14 8 11
+  HoneydewClone 10 150 14 8 11
+
+  Honeydew 12 150 14 8 11
+  HoneydewClone -2 150 14 8 11
+reset Honeydew Success
+reset HoneydewClone Success
+battle Israphel IsraphelClone
+
+  Israphel 90 90 12 16 1
+  IsraphelClone 90 90 12 16 1
+
+  Israphel 80 90 12 17 1
+  IsraphelClone 79 90 12 17 1
+
+  Israphel 69 90 12 18 1
+  IsraphelClone 68 90 12 18 1
+
+  Israphel 57 90 12 19 1
+  IsraphelClone 56 90 12 19 1
+
+  Israphel 44 90 12 20 1
+  IsraphelClone 43 90 12 20 1
+
+  Israphel 31 90 12 21 1
+  IsraphelClone 29 90 12 21 1
+
+  Israphel 17 90 12 22 1
+  IsraphelClone 15 90 12 22 1
+
+  Israphel 19 90 12 23 1
+  IsraphelClone -2 90 12 22 1
+reset Israphel Success
+reset IsrahelClone NULL
+battle Father_Braeburn Father_BraeburnClone
+
+  Father_Braeburn 90 90 4 12 20
+  Father_BraeburnClone 90 90 4 12 20
+
+  Father_Braeburn 73 90 4 12 20
+  Father_BraeburnClone 79 90 4 12 20
+
+  Father_Braeburn 56 90 4 12 20
+  Father_BraeburnClone 68 90 4 12 20
+
+  Father_Braeburn 39 90 4 12 20
+  Father_BraeburnClone 57 90 4 12 20
+
+  Father_Braeburn 22 90 4 12 20
+  Father_BraeburnClone 46 90 4 12 20
+
+  Father_Braeburn 5 90 4 12 20
+  Father_BraeburnClone 35 90 4 12 20
+
+  Father_Braeburn -12 90 4 12 20
+  Father_BraeburnClone 24 90 4 12 20
+reset Father_Braeburn Success
+reset Father_BraeburnClone Success
+battle Honeydew Israphel
+
+  Honeydew 150 150 14 8 11
+  Israphel 19 90 12 23 1

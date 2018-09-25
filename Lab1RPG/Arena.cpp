@@ -15,9 +15,6 @@ bool Arena::addFighter(string info) {
     int magic;
     
     if (ss >> name >> type >> hp >> strength >> speed >> magic) {
-        cout << "Name: " << name << endl;
-        cout << "Type: " << type << endl;
-        cout << "Specs: " << hp << " " << strength << " " << speed << " " << magic;
         if (type == "A") {
             cout << "Adding archer" << endl;
             fighterVec.push_back(new Archer(name, hp, strength, speed, magic));
