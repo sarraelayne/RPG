@@ -27,4 +27,6 @@ protected:
     int strength;
     int magic;
     int damage;
-}
+    int energy;
+    int mana;
+};

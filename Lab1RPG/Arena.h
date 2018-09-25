@@ -12,8 +12,8 @@ using namespace std;
 
 class Arena: public ArenaInterface{
     public:
-        Arena() {}
-        ~Arena[] {}
+        Arena() {};
+        ~Arena() {};
         
         bool addFighter(string info);
         bool removeFighter(string name);

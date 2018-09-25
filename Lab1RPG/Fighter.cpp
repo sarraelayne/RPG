@@ -10,15 +10,9 @@ Fighter::Fighter(string inName, int inHP, int inStrength, int inSpeed, int inMag
     magic = inMagic;
 }
 Fighter::~Fighter() {
-	cout << "in Fighter default"
+	cout << "in Fighter default";
 }
-bool Fighter::isValidMove(int game[3][3]/*size of tictactoe board*/, int action) {
-	if (game[action /3][action % 3] == -1) {
-		return true;
-	}
-	return false;
-}
-string Fighter::getName() const = 0 {
+string Fighter::getName() const {
 	return name;
 }
 int Fighter::getMaximumHP() const {
@@ -41,13 +35,12 @@ int Fighter::getMagic() const {
 	return magic;
 }
 
-int Robot::getDamage() {
+int Fighter::getDamage() {
 	return damage;
 }
-void Fighter::takeDamage(int damage) = 0 {
-		damage = damage - (0.25 * speed);
-		return damage;
+void Fighter::takeDamage(int damage) {
+	damage = damage - (0.25 * speed);
 }
-void Fighter::regenerate() = 0 {
+void Fighter::regenerate() {
 	hp = hp + strength/6;
 }

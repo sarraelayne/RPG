@@ -6,10 +6,9 @@ int Archer::getDamage() {
 	return damage;
 }
 void Archer::reset() {
-    
-	return speed;
+	speed = speed;
 }
-bool Archer::useAbility {
+bool Archer::useAbility() {
 	speed = speed + 1;
 	return true;
 }

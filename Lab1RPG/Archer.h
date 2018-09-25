@@ -5,10 +5,11 @@ using namespace std;
 
 class Archer: public Fighter {
 public:
-    Archer();
-    Archer(int fighterNum)
+    Archer(string name, int hp, int strength, int speed, int magic):Fighter(name, hp, strength, speed, magic){};
     ~Archer(){};
-    int selectAction(int game[3][3]);
+    int getDamage();
+    void reset();
+    bool useAbility();
 };
 
 #endif 

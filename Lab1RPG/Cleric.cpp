@@ -9,9 +9,9 @@ void Cleric::reset() {
 	mana = magic * 5;
 }
 void Cleric::regenerate() {
-	
+	mana = mana + magic/5;
 }
-bool Cleric::useAbility {
+bool Cleric::useAbility() {
 	if (mana >= CLERIC_ABILITY_COST) {
 		hp = hp + magic/3;
 		mana = mana - CLERIC_ABILITY_COST;

@@ -4,7 +4,6 @@ using namespace std;
 
 
 bool Arena::addFighter(string info) {
-    int arenaSize;
     stringstream ss(info);
     string name;
     string type;
@@ -39,7 +38,7 @@ bool Arena::addFighter(string info) {
 
 bool Arena::removeFighter(string name) {
     for (int i = 0; i < fighterVec.size(); i++) {
-        if (fighterVec.at(i)->getname() == name) {
+        if (fighterVec.at(i)->getName() == name) {
             fighterVec.erase(fighterVec.begin() + i);
             return true;
         }
@@ -50,7 +49,7 @@ bool Arena::removeFighter(string name) {
 FighterInterface* Arena::getFighter(string name) {
     for (Fighter* cp : fighterVec) {
         if (cp->getName() == name) {
-            return cp
+            return cp;
         }
     }
     return NULL;
@@ -58,6 +57,8 @@ FighterInterface* Arena::getFighter(string name) {
 
 
 int Arena::getSize () const {
+    int arenaSize;
+    
     arenaSize = fighterVec.size();
     return arenaSize;
 }

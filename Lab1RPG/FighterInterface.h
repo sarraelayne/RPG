@@ -31,16 +31,7 @@
 *	More details about how stats are used and how abilities work can be found in the comments below.
 */
 
-/*
-*	ROBOT_ABILITY_COST
-*	The amount of energy a Robot needs to perform its special ability.
-*/
 const int ROBOT_ABILITY_COST = 5;
-
-/*
-*	CLERIC_ABILITY_COST
-*	The amount of mana a Cleric needs to perform its special ability.
-*/
 const int CLERIC_ABILITY_COST = 25;
 
 class FighterInterface
@@ -48,49 +39,12 @@ class FighterInterface
 public:
 	FighterInterface() {}
 	virtual ~FighterInterface() {}
-
-	/*
-	*	getName()
-	*
-	*	Returns the name of this fighter.
-	*/
 	virtual std::string getName() const = 0;
-
-	/*
-	*	getMaximumHP()
-	*
-	*	Returns the maximum hit points of this fighter.
-	*/
 	virtual int getMaximumHP() const = 0;
-
-	/*
-	*	getCurrentHP()
-	*
-	*	Returns the current hit points of this fighter.
-	*/
 	virtual int getCurrentHP() const = 0;
-
-	/*
-	*	getStrength()
-	*
-	*	Returns the strength stat of this fighter.
-	*/
 	virtual int getStrength() const = 0;
-
-	/*
-	*	getSpeed()
-	*
-	*	Returns the speed stat of this fighter.
-	*/
 	virtual int getSpeed() const = 0;
-
-	/*
-	*	getMagic()
-	*
-	*	Returns the magic stat of this fighter.
-	*/
 	virtual int getMagic() const = 0;
-
 	virtual int getDamage() = 0;
 
 	/*
