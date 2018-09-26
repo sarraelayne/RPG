@@ -29,6 +29,7 @@ protected:
     int damage;
     int energy;
     int mana;
+    int maxMana;
     int originalSpeed;
     int bonus_damage;
     int current_energy;

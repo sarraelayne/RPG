@@ -11,7 +11,4 @@ public:
     int getDamage();
     void reset();
     bool useAbility();
-protected:
-    int damage;
-    int energy;
 };

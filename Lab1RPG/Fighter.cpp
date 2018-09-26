@@ -9,6 +9,10 @@ Fighter::Fighter(string inName, int inHP, int inStrength, int inSpeed, int inMag
     hp = inHP;
     magic = inMagic;
     maxHP = inHP;
+    mana = inMagic * 5;
+    maxMana = inMagic * 5;
+    current_energy = inMagic * 2;
+    maximum_energy = inMagic * 2;
 }
 Fighter::~Fighter() {
 	cout << "in Fighter default";
@@ -37,9 +41,27 @@ int Fighter::getMagic() const {
 }
 
 void Fighter::takeDamage(int damage) {
-	damage = damage - (0.25 * speed);
-	hp = hp - damage;
+	double speed_double;
+	speed_double = speed/4;
+	damage = damage - speed_double;
+	cout << "Speed_double: " << speed_double << endl;
+	cout << "Damage count: " << damage << endl;
+	if (damage >= 1) {
+		hp = hp - damage;
+		cout << "HP - Damage: " << hp << endl;
+	}
+	else {
+		cout << "No damage: " << hp << endl;
+	}
 }
 void Fighter::regenerate() {
-	hp = hp + strength/6;
+	int regenerate;
+	regenerate = strength / 6;
+	if (regenerate < 1) {
+		regenerate = 1;
+	}
+	hp = hp + regenerate;
+	if (hp > maxHP) {
+		hp = maxHP;
+	}
 }
