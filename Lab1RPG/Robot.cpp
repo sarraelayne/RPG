@@ -11,7 +11,7 @@ int Robot::getDamage() {
 }
 void Robot::reset() {
     hp = maxHP;
-    current_energy = magic * 2;
+    current_energy = maximum_energy;
     bonus_damage = 0;
 }
 bool Robot::useAbility() {

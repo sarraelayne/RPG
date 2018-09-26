@@ -50,12 +50,12 @@ void Fighter::takeDamage(int damage) {
 	hp = hp - damage;
 }
 void Fighter::regenerate() {
-	int regenerate;
-	regenerate = strength / 6;
-	if (regenerate < 1) {
-		regenerate = 1;
+	int regen;
+	regen = strength / 6;
+	if (regen < 1) {
+		regen = 1;
 	}
-	hp = hp + regenerate;
+	hp = hp + regen;
 	if (hp > maxHP) {
 		hp = maxHP;
 	}

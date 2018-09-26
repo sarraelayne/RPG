@@ -9,7 +9,7 @@ int Cleric::getDamage() {
 }
 void Cleric::reset() {
 	hp = maxHP;
-	mana = magic * 5;
+	mana = maxMana;
 }
 void Cleric::regenerate() {
 	Fighter::regenerate();
