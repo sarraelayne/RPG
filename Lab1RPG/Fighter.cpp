@@ -44,15 +44,10 @@ void Fighter::takeDamage(int damage) {
 	double speed_double;
 	speed_double = speed/4;
 	damage = damage - speed_double;
-	cout << "Speed_double: " << speed_double << endl;
-	cout << "Damage count: " << damage << endl;
-	if (damage >= 1) {
-		hp = hp - damage;
-		cout << "HP - Damage: " << hp << endl;
+	if (damage < 1) {
+		damage = 1;
 	}
-	else {
-		cout << "No damage: " << hp << endl;
-	}
+	hp = hp - damage;
 }
 void Fighter::regenerate() {
 	int regenerate;

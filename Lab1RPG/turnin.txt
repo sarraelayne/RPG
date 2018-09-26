@@ -658,7 +658,7 @@ battle Cow Sheep
   Sheep 2 5 1 2 1
 
   Cow 9 10 2 1 3
-  Sheep -2 5 1 2 1
+  Sheep 0 5 1 2 1
 reset Cow Success
 reset Sheep Success
 battle Tinman Spacker
@@ -670,19 +670,34 @@ battle Tinman Spacker
   Spacker 41 50 1 1 1
 
   Tinman 99 100 5 1 7
+  Spacker 36 50 1 1 1
+
+  Tinman 99 100 5 1 7
   Spacker 32 50 1 1 1
 
   Tinman 99 100 5 1 7
-  Spacker 23 50 1 1 1
+  Spacker 28 50 1 1 1
 
   Tinman 99 100 5 1 7
-  Spacker 14 50 1 1 1
+  Spacker 24 50 1 1 1
 
   Tinman 99 100 5 1 7
-  Spacker 5 50 1 1 1
+  Spacker 20 50 1 1 1
+
+  Tinman 99 100 5 1 7
+  Spacker 16 50 1 1 1
+
+  Tinman 99 100 5 1 7
+  Spacker 12 50 1 1 1
+
+  Tinman 99 100 5 1 7
+  Spacker 8 50 1 1 1
+
+  Tinman 99 100 5 1 7
+  Spacker 4 50 1 1 1
 
   Tinman 100 100 5 1 7
-  Spacker -5 50 1 1 1
+  Spacker -1 50 1 1 1
 reset Tinman Success
 reset Spacker Success
 battle Joshua NORAD
@@ -690,59 +705,338 @@ battle Joshua NORAD
   Joshua 1000 1000 10 80 10
   NORAD 750 750 30 40 1
 
-  Joshua 942 1000 10 80 10
+  Joshua 990 1000 10 80 10
   NORAD 745 750 30 40 1
 
-  Joshua 885 1000 10 80 10
-  NORAD 740 750 30 40 1
+  Joshua 981 1000 10 80 10
+  NORAD 747 750 30 40 1
+
+  Joshua 972 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 963 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 954 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 945 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 936 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 927 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 918 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 909 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 900 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 891 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 882 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 873 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 864 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 855 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 846 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 837 1000 10 80 10
+  NORAD 750 750 30 40 1
 
   Joshua 828 1000 10 80 10
-  NORAD 735 750 30 40 1
+  NORAD 750 750 30 40 1
 
-  Joshua 771 1000 10 80 10
-  NORAD 730 750 30 40 1
+  Joshua 819 1000 10 80 10
+  NORAD 750 750 30 40 1
 
-  Joshua 714 1000 10 80 10
-  NORAD 725 750 30 40 1
+  Joshua 810 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 801 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 792 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 783 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 774 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 765 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 756 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 747 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 738 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 729 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 720 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 711 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 702 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 693 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 684 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 675 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 666 1000 10 80 10
+  NORAD 750 750 30 40 1
 
   Joshua 657 1000 10 80 10
-  NORAD 720 750 30 40 1
+  NORAD 750 750 30 40 1
 
-  Joshua 600 1000 10 80 10
-  NORAD 715 750 30 40 1
+  Joshua 648 1000 10 80 10
+  NORAD 750 750 30 40 1
 
-  Joshua 543 1000 10 80 10
-  NORAD 710 750 30 40 1
+  Joshua 639 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 630 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 621 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 612 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 603 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 594 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 585 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 576 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 567 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 558 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 549 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 540 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 531 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 522 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 513 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 504 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 495 1000 10 80 10
+  NORAD 750 750 30 40 1
 
   Joshua 486 1000 10 80 10
-  NORAD 705 750 30 40 1
+  NORAD 750 750 30 40 1
 
-  Joshua 429 1000 10 80 10
-  NORAD 700 750 30 40 1
+  Joshua 477 1000 10 80 10
+  NORAD 750 750 30 40 1
 
-  Joshua 372 1000 10 80 10
-  NORAD 695 750 30 40 1
+  Joshua 468 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 459 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 450 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 441 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 432 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 423 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 414 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 405 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 396 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 387 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 378 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 369 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 360 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 351 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 342 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 333 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 324 1000 10 80 10
+  NORAD 750 750 30 40 1
 
   Joshua 315 1000 10 80 10
-  NORAD 690 750 30 40 1
+  NORAD 750 750 30 40 1
 
-  Joshua 258 1000 10 80 10
-  NORAD 685 750 30 40 1
+  Joshua 306 1000 10 80 10
+  NORAD 750 750 30 40 1
 
-  Joshua 201 1000 10 80 10
-  NORAD 680 750 30 40 1
+  Joshua 297 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 288 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 279 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 270 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 261 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 252 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 243 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 234 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 225 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 216 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 207 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 198 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 189 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 180 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 171 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 162 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 153 1000 10 80 10
+  NORAD 750 750 30 40 1
 
   Joshua 144 1000 10 80 10
-  NORAD 675 750 30 40 1
+  NORAD 750 750 30 40 1
 
-  Joshua 87 1000 10 80 10
-  NORAD 670 750 30 40 1
+  Joshua 135 1000 10 80 10
+  NORAD 750 750 30 40 1
 
-  Joshua 30 1000 10 80 10
-  NORAD 665 750 30 40 1
+  Joshua 126 1000 10 80 10
+  NORAD 750 750 30 40 1
 
-  Joshua -27 1000 10 80 10
-  NORAD 660 750 30 40 1
+  Joshua 117 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 108 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 99 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 90 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 81 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 72 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 63 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 54 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 45 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 36 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 27 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 18 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 9 1000 10 80 10
+  NORAD 750 750 30 40 1
+
+  Joshua 0 1000 10 80 10
+  NORAD 750 750 30 40 1
 reset Joshua Success
 reset NORAD Success
 battle Honeydew HoneydewClone
@@ -753,23 +1047,41 @@ battle Honeydew HoneydewClone
   Honeydew 124 150 14 8 11
   HoneydewClone 126 150 14 8 11
 
-  Honeydew 100 150 14 8 11
-  HoneydewClone 102 150 14 8 11
+  Honeydew 109 150 14 8 11
+  HoneydewClone 111 150 14 8 11
 
-  Honeydew 76 150 14 8 11
-  HoneydewClone 78 150 14 8 11
+  Honeydew 98 150 14 8 11
+  HoneydewClone 100 150 14 8 11
 
-  Honeydew 52 150 14 8 11
-  HoneydewClone 54 150 14 8 11
+  Honeydew 88 150 14 8 11
+  HoneydewClone 90 150 14 8 11
+
+  Honeydew 78 150 14 8 11
+  HoneydewClone 80 150 14 8 11
+
+  Honeydew 68 150 14 8 11
+  HoneydewClone 70 150 14 8 11
+
+  Honeydew 58 150 14 8 11
+  HoneydewClone 60 150 14 8 11
+
+  Honeydew 48 150 14 8 11
+  HoneydewClone 50 150 14 8 11
+
+  Honeydew 38 150 14 8 11
+  HoneydewClone 40 150 14 8 11
 
   Honeydew 28 150 14 8 11
   HoneydewClone 30 150 14 8 11
 
-  Honeydew 4 150 14 8 11
-  HoneydewClone 6 150 14 8 11
+  Honeydew 18 150 14 8 11
+  HoneydewClone 20 150 14 8 11
 
-  Honeydew 6 150 14 8 11
-  HoneydewClone -20 150 14 8 11
+  Honeydew 8 150 14 8 11
+  HoneydewClone 10 150 14 8 11
+
+  Honeydew 10 150 14 8 11
+  HoneydewClone -2 150 14 8 11
 reset Honeydew Success
 reset HoneydewClone Success
 battle Israphel IsraphelClone
@@ -835,13 +1147,28 @@ battle Honeydew Israphel
   Israphel 68 90 12 17 1
 
   Honeydew 121 150 14 8 11
-  Israphel 46 90 12 18 1
+  Israphel 55 90 12 18 1
 
   Honeydew 106 150 14 8 11
-  Israphel 24 90 12 19 1
+  Israphel 46 90 12 19 1
 
-  Honeydew 108 150 14 8 11
-  Israphel 0 90 12 19 1
+  Honeydew 90 150 14 8 11
+  Israphel 38 90 12 20 1
+
+  Honeydew 73 150 14 8 11
+  Israphel 31 90 12 21 1
+
+  Honeydew 55 150 14 8 11
+  Israphel 24 90 12 22 1
+
+  Honeydew 36 150 14 8 11
+  Israphel 17 90 12 23 1
+
+  Honeydew 16 150 14 8 11
+  Israphel 10 90 12 24 1
+
+  Honeydew -5 150 14 8 11
+  Israphel 4 90 12 25 1
 reset Honeydew Success
 reset Israphel Success
 battle Israphel Father_Braeburn
@@ -880,16 +1207,31 @@ battle Honeydew Father_Braeburn
   Father_Braeburn 72 90 4 12 20
 
   Honeydew 116 150 14 8 11
-  Father_Braeburn 54 90 4 12 20
+  Father_Braeburn 63 90 4 12 20
 
   Honeydew 100 150 14 8 11
-  Father_Braeburn 36 90 4 12 20
+  Father_Braeburn 58 90 4 12 20
 
   Honeydew 84 150 14 8 11
-  Father_Braeburn 18 90 4 12 20
+  Father_Braeburn 54 90 4 12 20
 
-  Honeydew 86 150 14 8 11
-  Father_Braeburn -7 90 4 12 20
+  Honeydew 68 150 14 8 11
+  Father_Braeburn 44 90 4 12 20
+
+  Honeydew 52 150 14 8 11
+  Father_Braeburn 34 90 4 12 20
+
+  Honeydew 36 150 14 8 11
+  Father_Braeburn 24 90 4 12 20
+
+  Honeydew 20 150 14 8 11
+  Father_Braeburn 20 90 4 12 20
+
+  Honeydew 4 150 14 8 11
+  Father_Braeburn 10 90 4 12 20
+
+  Honeydew 6 150 14 8 11
+  Father_Braeburn -1 90 4 12 20
 reset Honeydew Success
 reset Father_Braeburn Success
 removeFighter Fumblemore True
