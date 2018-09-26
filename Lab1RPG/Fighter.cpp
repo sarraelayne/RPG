@@ -49,7 +49,7 @@ void Fighter::takeDamage(int damage) {
 	}
 	hp = hp - damage;
 }
-void Fighter::regenerate() {
+void Fighter::regenerate() {  //this works right
 	int regen;
 	regen = strength / 6;
 	if (regen < 1) {
