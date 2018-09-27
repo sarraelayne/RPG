@@ -60,3 +60,5 @@ void Fighter::regenerate() {  //this works right
 		hp = maxHP;
 	}
 }
+
+//makegallery on instagram

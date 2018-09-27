@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 
@@ -13,17 +14,24 @@ bool Arena::addFighter(string info) {
     int strength;
     int speed;
     int magic;
+    bool isRepeat = false;
     
-    if (ss >> name >> type >> hp >> strength >> speed >> magic) {
-        if (type == "A") {
+    if (ss >> name >> type >> hp >> strength >> speed >> magic && ss.eof()) {
+        for(int i = 0; i < fighterVec.size(); i++) {
+            if (fighterVec.at(i) -> getName() == name) {
+                i = fighterVec.size() + 1;
+                isRepeat = true;
+            }
+        }
+        if (type == "A" && !isRepeat) {
             cout << "Adding archer" << endl;
             fighterVec.push_back(new Archer(name, hp, strength, speed, magic));
         }
-        else if (type == "C") {
+        else if (type == "C" && !isRepeat) {
             cout << "Adding cleric" << endl;
             fighterVec.push_back(new Cleric(name, hp, strength, speed, magic));
         }
-        else if (type == "R") {
+        else if (type == "R" && !isRepeat) {
             cout << "Adding robot" << endl;
             fighterVec.push_back(new Robot(name, hp, strength, speed, magic));
         }

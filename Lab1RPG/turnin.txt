@@ -611,11 +611,11 @@ removeFighter John False
 addFighter Jason A 1 1 1 Invalid
 addFighter Yason A 1 1 m 1 Invalid
 addFighter Hason 1 1 1 1 Invalid
-addFighter Lason A 1 1 1 1 1 Added
+addFighter Lason A 1 1 1 1 1 Invalid
 addFighter Mason A 1 2 3 4 Added
-addFighter Mason C 5 6 7 8 Added
+addFighter Mason C 5 6 7 8 Invalid
 removeFighter Mason True
-getSize 2
+getSize 0
 getSize 0
 addFighter Fumblemore C 100 10 10 100 Added
 addFighter Creeper R 10 100 1 1 Added
