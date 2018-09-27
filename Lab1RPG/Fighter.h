@@ -26,7 +26,7 @@ protected:
     int maxHP;
     int strength;
     int magic;
-    int damage;
+    int damage2;
     int energy;
     int mana;
     int maxMana;

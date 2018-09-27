@@ -4,8 +4,8 @@
 using namespace std;
 
 int Archer::getDamage() {
-	damage = speed;
-	return damage;
+	damage2 = speed;
+	return damage2;
 }
 void Archer::reset() {
 	hp = maxHP;

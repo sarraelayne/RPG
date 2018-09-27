@@ -13,6 +13,7 @@ Fighter::Fighter(string inName, int inHP, int inStrength, int inSpeed, int inMag
     maxMana = inMagic * 5;
     current_energy = inMagic * 2;
     maximum_energy = inMagic * 2;
+    damage2 = 0;
 }
 Fighter::~Fighter() {
 	cout << "in Fighter default";
@@ -50,12 +51,12 @@ void Fighter::takeDamage(int damage) {
 	hp = hp - damage;
 }
 void Fighter::regenerate() {  //this works right
-	int regen;
-	regen = strength / 6;
-	if (regen < 1) {
-		regen = 1;
+	int regenerate;
+	regenerate = strength / 6;
+	if (regenerate < 1) {
+		regenerate = 1;
 	}
-	hp = hp + regen;
+	hp = hp + regenerate;
 	if (hp > maxHP) {
 		hp = maxHP;
 	}
