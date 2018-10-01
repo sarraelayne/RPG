@@ -18,4 +18,5 @@ class ExpressionManager: public ExpressionManagerInterface() {
 	string inExpression;
 	string newInfix;
 	string newPostfix;
+	stack<string> balancedStack;
 }
