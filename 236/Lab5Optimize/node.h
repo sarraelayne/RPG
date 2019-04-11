@@ -10,5 +10,5 @@ class node {
     int pos;
     
     node();
-    void addNode(int nbr);
+    void add(int nbr);
 };

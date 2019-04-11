@@ -5,6 +5,6 @@ node::node() {
     pos = -1;
 }
 
-void node::addNode(int nbr) {
+void node::add(int nbr) {
     neighbors.insert(nbr);
 }
