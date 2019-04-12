@@ -295,3 +295,52 @@ void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
     
     cout << "\nSchemes populated after " << loopCount << " passes through the Rules.\n";
 }
+bool isRuleDependent(Relation rel1, Relation rel2) {
+    for (unsigned int i = 0; i < rel1.getScheme().getRulePredicateList().size(); i++) {
+        if (rel2.getRules().getRulePredicate() == rel1.getRules().getRulePredicateList[i].getPredicateID()) {
+            return true;
+        }
+    }
+    return false;
+}
+void Interpreter::smartEvalRules() {
+    unsigned int nRules = ruleResults.size();
+    graph dependency = graph(nRules);
+    for (unsigned int i = 0; i < nRules; i++) {
+        for (unsigned int j = 0; j < nRules; j++) {
+            if (isRuleDependent(ruleResults[i],ruleResults[j])) { /////DEFINE THIS FUNCTION
+                dependency.addEdge(i, j);
+            }
+        }
+    }
+
+    //ouput dependancy graph
+    cout << "Dependency Graph" << endl;
+    cout << dependency.toString() << endl;
+    cout << "Reverse Graph" << endl;
+    graph rg = dependency.reverse();
+    cout << rg.toString() << endl;
+    vector<int> pnums = rg.DFSForest();
+    cout << "Postorder Numbers"  << endl;
+    cout << rg.positions() << endl;
+    cout << "SCC Search Order" << endl;
+    print_rules(nrules, pnums, out); /////FIND THIS FUNCTION
+    cout<<endl;
+    
+    vector<vector<int>> comps = dependency.scc();
+    for (unsigned int i = 0; i < comps.size(); i++) {
+        cout << "SCC:";
+        unsigned int compSize = comps[i].size();
+        for (unsigned int j = 0; j < compSize; j++) {
+            cout << " R" << comps[i][j];
+        }
+        cout << endl;
+        if (compSize == 1 && dependency.hasEdge(comps[i][0], comps[i][0])) {
+            evalRule(ruleResults[comps[i][0]]);
+            cout << endl;
+            continue;
+        }
+        evalAllRules();
+    }
+    cout << "Rule Evaluation Complete" << endl << endl;
+}

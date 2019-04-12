@@ -14,11 +14,6 @@ int Database::countTuples(){
     return numTups;
 }
 void Database::databaseToString(){
-    //map<string, Relation>
-    //cout << "Begin databaseToString();\n";
-    //Database::iterator it = this->begin();
-    //cout << this->size() << ": database size\n";
-    
     /*
     for(it=this->begin();it!=this->end();it++){//maybe delete first condition
         //cout << "start databaseToString() for loop\n";

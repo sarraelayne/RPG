@@ -18,7 +18,7 @@ graph graph::reverse() {
     graph g = graph(numN);
     
     for (unsigned int i = 0; i < numN; i++) {
-        int j;
+        //int j;
         for (auto j: nodeVec[i].neighbors) g.addEdge(j, i);
     }
     
@@ -63,7 +63,7 @@ vector<int> graph::DFSForest() {
 }
 void graph::explore(int node) {
     nodeVec[node].beenThere = true;
-    for (auto nbr; nodeVec[node].neighbors) {
+    for (auto nbr: nodeVec[node].neighbors) {
         if (nodeVec[nbr].beenThere) continue;
         explore(nbr);
     }

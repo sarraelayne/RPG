@@ -7,6 +7,7 @@
 #include "Database.h"
 #include "DatalogProgram.h"
 #include "Predicate.h"
+#include "graph.h"
 
 using namespace std;
 
@@ -18,6 +19,10 @@ class Interpreter {
     public:
     Interpreter(DatalogProgram var);
     ~Interpreter();
+    
+    //Lab5
+    void smartEvalRules();
+    bool isRuleDependent(Relation rel1, Relation rel2);
     
     //Lab4
     Relation evalRule(Rule ruleObj);

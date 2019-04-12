@@ -1,16 +1,9 @@
-
-
-#ifndef RULE_H
-#define RULE_H
-
+#pragma once
 #include <string>
 #include <iostream>
 #include <vector>
 #include "Predicate.h"
 #include "Parameter.h"
-//#include "DatalogProgram.h"
-//#include "Token.h"
-//#include "Scanner.h"
 
 using namespace std;
 
@@ -29,16 +22,13 @@ class Rule {
     string getRulePredicate();
     vector<string> getRulePredicateList();
     
-    
-    //friend class Token;
-    //friend class Scanner;
+
     friend class Predicate;
     friend class Parameter;
     friend class DatalogProgram;
     
     
     private:
-    //rule -> headPredicate COLON_DASH predicate predicateList PERIOD
     string ruleHeadPredicate;
     string ruleColonDash = ":-";
     string rulePredicate;
@@ -46,5 +36,3 @@ class Rule {
     string rulePeriod = ".";
   
 };
-
-#endif
