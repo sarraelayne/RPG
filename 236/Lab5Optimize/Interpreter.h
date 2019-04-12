@@ -22,7 +22,8 @@ class Interpreter {
     
     //Lab5
     void smartEvalRules();
-    bool isRuleDependent(Relation rel1, Relation rel2);
+    bool isRuleDependent(Rule rule1, Rule rule2);
+    void printRules(unsigned int nRules, vector<int> pnums);
     
     //Lab4
     Relation evalRule(Rule ruleObj);

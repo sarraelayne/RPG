@@ -125,6 +125,7 @@ void Interpreter::evalAllQueries(){
 }
 Relation Interpreter::evalRule(Rule ruleObj){//add tuples to database, maybe could be void, queryeval(predicates) on RHS to get relations
     //Make a function in the Interpreter that evaluates one query predicate and returns a relation
+    //cout << "standard rules" << endl;
     cout << ruleObj.ruleToString() << endl;
     
     //1: Evaluate the predicates on the rhs of the Rule////////////////////////////////
@@ -277,6 +278,7 @@ Predicate Interpreter::parseRulePredicate(string predicate){
 }
 void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
     //cycle through all the rules
+    //cout << "all Rules" << endl;
     vector<Rule> rules = dp.getRules();
     
     
@@ -293,54 +295,65 @@ void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
         loopCount++;
     }
     
-    cout << "\nSchemes populated after " << loopCount << " passes through the Rules.\n";
+    //cout << "\nSchemes populated after " << loopCount << " passes through the Rules.\n";
 }
-bool isRuleDependent(Relation rel1, Relation rel2) {
-    for (unsigned int i = 0; i < rel1.getScheme().getRulePredicateList().size(); i++) {
-        if (rel2.getRules().getRulePredicate() == rel1.getRules().getRulePredicateList[i].getPredicateID()) {
+bool Interpreter::isRuleDependent(Rule rule1, Rule rule2) {
+    for (unsigned int i = 0; i < rule1.getRulePredicateList().size(); i++) {
+        if (rule2.getRulePredicate() == rule1.getRulePredicateList().at(i)) {
+            //Find a way to get from Relation->rule->predicate
             return true;
         }
     }
     return false;
 }
 void Interpreter::smartEvalRules() {
-    unsigned int nRules = ruleResults.size();
+    vector<Rule> rules = dp.getRules();
+    unsigned int nRules = rules.size();
+    //cout << "# RUles: " << nRules << endl;
     graph dependency = graph(nRules);
     for (unsigned int i = 0; i < nRules; i++) {
         for (unsigned int j = 0; j < nRules; j++) {
-            if (isRuleDependent(ruleResults[i],ruleResults[j])) { /////DEFINE THIS FUNCTION
+            if (isRuleDependent(rules[i],rules[j])) {
                 dependency.addEdge(i, j);
             }
         }
     }
 
-    //ouput dependancy graph
+    //output dependency graph
     cout << "Dependency Graph" << endl;
-    cout << dependency.toString() << endl;
-    cout << "Reverse Graph" << endl;
+    //cout << dependency.toString() << endl;
+    //cout << "Reverse Graph" << endl;
     graph rg = dependency.reverse();
-    cout << rg.toString() << endl;
+    //cout << rg.toString() << endl;
     vector<int> pnums = rg.DFSForest();
-    cout << "Postorder Numbers"  << endl;
-    cout << rg.positions() << endl;
-    cout << "SCC Search Order" << endl;
-    print_rules(nrules, pnums, out); /////FIND THIS FUNCTION
-    cout<<endl;
+    //cout << "Postorder Numbers"  << endl;
+    //cout << rg.positions() << endl;
+    //cout << "SCC Search Order" << endl;
+    printRules(nRules, pnums);
+    cout << endl;
     
+    cout << "Rule Evaluation" << endl;
     vector<vector<int>> comps = dependency.scc();
     for (unsigned int i = 0; i < comps.size(); i++) {
         cout << "SCC:";
         unsigned int compSize = comps[i].size();
         for (unsigned int j = 0; j < compSize; j++) {
+            //cout << "RULEPRINT1";
             cout << " R" << comps[i][j];
         }
         cout << endl;
         if (compSize == 1 && dependency.hasEdge(comps[i][0], comps[i][0])) {
-            evalRule(ruleResults[comps[i][0]]);
+            evalRule(rules[comps[i][0]]);
             cout << endl;
             continue;
         }
         evalAllRules();
     }
-    cout << "Rule Evaluation Complete" << endl << endl;
+    //cout << "Rule Evaluation Complete" << endl << endl;
+}
+void Interpreter::printRules(unsigned int nRules, vector<int> pnums) {
+    for (unsigned int i = 0; i < nRules; i++) {
+        cout << "R" << i << ":"; //<< pnums[i] << endl;
+        cout << "R" << pnums[nRules - i] << endl;
+    }
 }

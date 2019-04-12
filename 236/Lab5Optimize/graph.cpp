@@ -34,6 +34,7 @@ void graph::addNode() {
     nodeVec.push_back(node());
 }
 vector<vector<int>> graph::scc() { //FINDS STRONGLY CONNECTED NODES
+    //cout << "scc" << endl;
     unsigned int numN = nodeVec.size();
     graph g = reverse();
     vector<int> reversedOrder = g.DFSForest();
@@ -51,17 +52,19 @@ vector<vector<int>> graph::scc() { //FINDS STRONGLY CONNECTED NODES
     return parts;
 }
 vector<int> graph::DFSForest() {
+    //cout << "forest" << endl;
     tempArray.clear();
     pos = 1;
     
-    for (unsigned int i = 0; i > nodeVec.size(); i++) {
+    for (unsigned int i = 0; i < nodeVec.size(); i++) {
         if(nodeVec[i].beenThere) continue;
         else explore(i);
     }
-    
+    //cout << "size: " << tempArray.size() << endl;
     return tempArray;
 }
 void graph::explore(int node) {
+    //cout << "explore" << endl;
     nodeVec[node].beenThere = true;
     for (auto nbr: nodeVec[node].neighbors) {
         if (nodeVec[nbr].beenThere) continue;
