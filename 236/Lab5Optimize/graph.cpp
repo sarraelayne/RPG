@@ -80,9 +80,13 @@ string graph::toString() {
     stringstream result;
     
     for(unsigned int i = 0; i < nodeVec.size(); i++) {
-        result << "  R" << i << ":";
-        for (auto j: nodeVec[i].neighbors) {
+        result << "R" << i << ":";
+        for (unsigned int j: nodeVec[i].neighbors) {
             result << "R" << j;
+            unsigned int nbrSize = nodeVec[i].neighbors.size();
+            if(j < (nbrSize) && nbrSize > 1) {
+                result << ",";
+            }
 
         }
         result << endl;
