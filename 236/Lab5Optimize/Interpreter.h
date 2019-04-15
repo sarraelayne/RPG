@@ -39,4 +39,5 @@ class Interpreter {
     Database db;
     vector<Relation> queryResults;
     vector<Relation> ruleResults;
+    int numPasses = 0;
 };

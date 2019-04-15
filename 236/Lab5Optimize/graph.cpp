@@ -40,6 +40,7 @@ vector<vector<int>> graph::scc() { //FINDS STRONGLY CONNECTED NODES
     vector<int> reversedOrder = g.DFSForest();
     vector<vector<int>> parts;
     
+    
     for (unsigned int i = 0; i < numN; i++) {
         int startLoc = reversedOrder[numN - i - 1];
         if (nodeVec[startLoc].beenThere) continue;
@@ -48,6 +49,7 @@ vector<vector<int>> graph::scc() { //FINDS STRONGLY CONNECTED NODES
         sort(tempArray.begin(), tempArray.end());
         parts.push_back(tempArray);
     }
+    //for rule whatever print
     
     return parts;
 }
@@ -80,7 +82,8 @@ string graph::toString() {
     for(unsigned int i = 0; i < nodeVec.size(); i++) {
         result << "  R" << i << ":";
         for (auto j: nodeVec[i].neighbors) {
-            result << " R" << j;
+            result << "R" << j;
+
         }
         result << endl;
     }

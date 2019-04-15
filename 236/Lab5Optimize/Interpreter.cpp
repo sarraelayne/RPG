@@ -125,10 +125,8 @@ void Interpreter::evalAllQueries(){
 }
 Relation Interpreter::evalRule(Rule ruleObj){//add tuples to database, maybe could be void, queryeval(predicates) on RHS to get relations
     //Make a function in the Interpreter that evaluates one query predicate and returns a relation
-    //cout << "standard rules" << endl;
     cout << ruleObj.ruleToString() << endl;
-    
-    //1: Evaluate the predicates on the rhs of the Rule////////////////////////////////
+    //1: EVALUATE PREDICATES ON RHS OF RULE
     string ruleHeadPred = ruleObj.getRuleHeadPredicate(); 
     Predicate headPred = this->parseRulePredicate(ruleHeadPred);
     string rulePred = ruleObj.getRulePredicate();
@@ -183,7 +181,7 @@ Relation Interpreter::evalRule(Rule ruleObj){//add tuples to database, maybe cou
         rhs.push_back(temp);
     }
     
-    //2: Join the Relations that result /////////////////////////////
+    //2: JOIN RESULTING RELATIONS
     Relation result;
     vector<Relation> results;
     for(unsigned int z = 0; z < rhs.size(); z++){
@@ -213,14 +211,14 @@ Relation Interpreter::evalRule(Rule ruleObj){//add tuples to database, maybe cou
     }
     Relation result3 = result2.project(projectMe);
     
-    //4: Rename the Relation to make it union-compatible
+    //4: RENAME RELATION SO IT CAN BE UNIONED
     //find matching name in database, get that scheme, rename your scheme to that
     string IDname = headPred.getPredicateID();
     Relation dbRel = db.find(IDname)->second; //access elements from a map
     Scheme dbRelScheme = dbRel.getScheme();
     result3.setScheme(dbRelScheme);
 
-    //5: Union with the Relation in the database
+    //5: UNION WITH THE RELATION IN THE DATABASE
     Relation dbRel2 = db.find(IDname)->second;
     Relation result4 = result3.unionRelations(dbRel2);
     db[IDname] = result4;
@@ -278,7 +276,6 @@ Predicate Interpreter::parseRulePredicate(string predicate){
 }
 void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
     //cycle through all the rules
-    //cout << "all Rules" << endl;
     vector<Rule> rules = dp.getRules();
     
     
@@ -294,34 +291,57 @@ void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
         postcount = db.countTuples();
         loopCount++;
     }
-    
+    //cout << loopCount << " passes: R";
     //cout << "\nSchemes populated after " << loopCount << " passes through the Rules.\n";
 }
 bool Interpreter::isRuleDependent(Rule rule1, Rule rule2) {
-    for (unsigned int i = 0; i < rule1.getRulePredicateList().size(); i++) {
-        if (rule2.getRulePredicate() == rule1.getRulePredicateList().at(i)) {
-            //Find a way to get from Relation->rule->predicate
+    /*for (unsigned int i = 0; i < rule2.getRulePredicateList().size(); i++) {
+        cout << "predicate: " << rule2.getRulePredicateList().at(i) << endl;
+    }*/
+    string rule1String = rule1.getRuleHeadPredicate().substr(0, rule1.getRuleHeadPredicate().find("("));
+    string rule2String = rule2.getRulePredicate().substr(0, rule2.getRulePredicate().find("("));
+    cout << "rule1: " << rule1String << endl;
+    cout << "rule2: " << rule2String << endl;
+    if (rule1String == rule2String) {
+        //cout << "head equals" << endl;
+        return true;
+    }
+    for (unsigned int i = 0; i < rule2.getRulePredicateList().size(); i++) {
+        //cout << "rule1:" << rule1.getRuleHeadPredicate() << endl;
+        //cout << "rule2: " << rule2.getRulePredicateList().at(i) << endl;
+        
+        if (rule2.getRulePredicateList().at(i) == ",") continue;
+        //cout << "predicate: " << rule2.getRulePredicateList().at(i) << endl;
+        string ruleForString = rule2.getRulePredicateList().at(i).substr(0, rule2.getRulePredicateList().at(i).find("("));
+        cout << "ruleFS: " << ruleForString << endl;
+        if (rule1String == ruleForString) { //checking the comma? Rule 2 is staying constant
+        //grab head of rule, check all predicates in the list against head predicate. If match then add. 
+            cout << "end of run" << endl;
             return true;
         }
     }
+    //cout << "after for" << endl;
     return false;
 }
 void Interpreter::smartEvalRules() {
     vector<Rule> rules = dp.getRules();
     unsigned int nRules = rules.size();
-    //cout << "# RUles: " << nRules << endl;
     graph dependency = graph(nRules);
     for (unsigned int i = 0; i < nRules; i++) {
+        //cout << "Rules: " << endl;
+        //cout << rules[i].ruleToString() << endl;
         for (unsigned int j = 0; j < nRules; j++) {
+            //if(i == j) continue;
+            cout << "i: " << i << " j: " << j << endl;
             if (isRuleDependent(rules[i],rules[j])) {
-                dependency.addEdge(i, j);
+                cout << "found edge" << endl;
+                dependency.addEdge(j, i);
             }
         }
     }
 
-    //output dependency graph
+    //OUTPUT DEPENDENCY GRAPH
     cout << "Dependency Graph" << endl;
-    //cout << dependency.toString() << endl;
     //cout << "Reverse Graph" << endl;
     graph rg = dependency.reverse();
     //cout << rg.toString() << endl;
@@ -329,7 +349,7 @@ void Interpreter::smartEvalRules() {
     //cout << "Postorder Numbers"  << endl;
     //cout << rg.positions() << endl;
     //cout << "SCC Search Order" << endl;
-    printRules(nRules, pnums);
+    cout << dependency.toString();
     cout << endl;
     
     cout << "Rule Evaluation" << endl;
@@ -338,7 +358,6 @@ void Interpreter::smartEvalRules() {
         cout << "SCC:";
         unsigned int compSize = comps[i].size();
         for (unsigned int j = 0; j < compSize; j++) {
-            //cout << "RULEPRINT1";
             cout << " R" << comps[i][j];
         }
         cout << endl;
@@ -348,12 +367,15 @@ void Interpreter::smartEvalRules() {
             continue;
         }
         evalAllRules();
+        cout << numPasses << " passes: R" << comps[i][0] << endl;
     }
-    //cout << "Rule Evaluation Complete" << endl << endl;
 }
 void Interpreter::printRules(unsigned int nRules, vector<int> pnums) {
     for (unsigned int i = 0; i < nRules; i++) {
         cout << "R" << i << ":"; //<< pnums[i] << endl;
-        cout << "R" << pnums[nRules - i] << endl;
+        /*for(unsigned j = 0; j < pnums.size(); j++){
+            cout << "R" << pnums.at(j) << endl;
+        }*/
+        cout << "R" << pnums[nRules -i] << endl;
     }
 }
