@@ -79,15 +79,19 @@ void graph::explore(int node) {
 string graph::toString() {
     stringstream result;
     
-    for(unsigned int i = 0; i < nodeVec.size(); i++) {
+    for(unsigned int i = 0; i < nodeVec.size(); i++) { //NOT: nodevec size, j, 
         result << "R" << i << ":";
+        //cout << "nodeVec Size: " << nodeVec.size() << endl;
+        unsigned int numItr = 1;
         for (unsigned int j: nodeVec[i].neighbors) {
             result << "R" << j;
-            unsigned int nbrSize = nodeVec.size();
+            unsigned int nbrSize = nodeVec[i].neighbors.size();
+            //cout << "j: " << j << endl;
             //cout << "Size: " << nbrSize << endl;
-            if (j < nbrSize) {
+            if (numItr < nbrSize) {
                 result << ",";
             }
+            numItr++;
             /*if(i < nbrSize && nbrSize > 1) {
                 result << ",";
             }*/
