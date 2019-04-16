@@ -83,11 +83,15 @@ string graph::toString() {
         result << "R" << i << ":";
         for (unsigned int j: nodeVec[i].neighbors) {
             result << "R" << j;
-            unsigned int nbrSize = nodeVec[i].neighbors.size();
-            if(j < (nbrSize) && nbrSize > 1) {
+            unsigned int nbrSize = nodeVec.size();
+            //cout << "Size: " << nbrSize << endl;
+            if (j < nbrSize) {
                 result << ",";
             }
-
+            /*if(i < nbrSize && nbrSize > 1) {
+                result << ",";
+            }*/
+            //cout << "iter:" << i << "    result:" << result.str() << endl << endl;
         }
         result << endl;
     }

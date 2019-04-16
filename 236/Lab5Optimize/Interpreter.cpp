@@ -296,6 +296,7 @@ void Interpreter::evalAllRules(vector<int> comps){//fixed point algorithm, check
         }
         postcount = db.countTuples();
         loopCount++;
+        numPasses++;
     }
     //numPasses++;
     //cout << loopCount << " passes: R";
@@ -359,21 +360,20 @@ void Interpreter::smartEvalRules() {
     vector<vector<int>> comps = dependency.scc();
     //numPasses = 0;
     for (unsigned int i = 0; i < comps.size(); i++) {
-        numPasses = 1;
+        numPasses = 0;
         cout << "SCC: ";
         unsigned int compSize = comps[i].size();
         //cout << "compSize: " << compSize << endl;
         for (unsigned int j = 0; j < compSize; j++) {
             cout << "R" << comps[i][j];
-            if(compSize > 1) {
+            if(compSize > 1 && j < compSize - 1) {
                 cout << ",";
             }
-            
-            //print out commas for format R1,R2,R3
         }
         cout << endl;
         if (compSize == 1 && !dependency.hasEdge(comps[i][0], comps[i][0])) { ////dependency.nodeVec[i].neighbors.empty();
             evalRule(rules[comps[i][0]]);
+            numPasses++;
             //cout << endl;
             //numPasses++; 
             //cout << "RULES: " << rules[comps[i][0]].ruleToString() << endl;
@@ -381,10 +381,16 @@ void Interpreter::smartEvalRules() {
         else {
             //cout << "compi:" << comps[i].at(0) << endl;
             evalAllRules(comps[i]);
-            numPasses++;
         }
         //print out all comps[i][0], , , 
-        cout << numPasses << " passes: R" << comps[i][0] << endl;
+        cout << numPasses << " passes: ";
+        for (unsigned int k = 0; k < comps[i].size(); k++) {
+            cout << "R" << comps[i][k];
+            if (k < comps[i].size() - 1) {
+                cout << ",";
+            }
+        }
+        cout << endl;
     }
 }
 void Interpreter::printRules(unsigned int nRules, vector<int> pnums) {
