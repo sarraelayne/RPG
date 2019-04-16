@@ -27,7 +27,7 @@ class Interpreter {
     
     //Lab4
     Relation evalRule(Rule ruleObj);
-    void evalAllRules();
+    void evalAllRules(vector<int> comps);
     Predicate parseRulePredicate(string predicate);
     
     //Lab3
@@ -39,5 +39,5 @@ class Interpreter {
     Database db;
     vector<Relation> queryResults;
     vector<Relation> ruleResults;
-    int numPasses = 0;
+    int numPasses;
 };

@@ -194,10 +194,9 @@ Relation Interpreter::evalRule(Rule ruleObj){//add tuples to database, maybe cou
             results.push_back(partialAnswer);
         }
     }
-    
     Relation result2 = results.at(results.size()-1);
 
-    //3: Project the columns that appear in the head predicate = predicates of the Rule object//////////////////////////
+    //3: Project the columns that appear in the head predicate = predicates of the Rule object
     vector<int> projectMe;
     Scheme resScheme = result2.getScheme();
 
@@ -210,6 +209,9 @@ Relation Interpreter::evalRule(Rule ruleObj){//add tuples to database, maybe cou
         }
     }
     Relation result3 = result2.project(projectMe);
+    /*cout << endl << "result3: ";
+    result3.relationToString();
+    cout << endl << endl;*/
     
     //4: RENAME RELATION SO IT CAN BE UNIONED
     //find matching name in database, get that scheme, rename your scheme to that
@@ -274,10 +276,14 @@ Predicate Interpreter::parseRulePredicate(string predicate){
 
     return result;
 }
-void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
+void Interpreter::evalAllRules(vector<int> comps){//fixed point algorithm, check if tuples added THiS IS WHERE IT GETS WEIRD PRINTING LAB5
     //cycle through all the rules
     vector<Rule> rules = dp.getRules();
+    vector<Rule> sccRules;
     
+    for(unsigned int i = 0; i < comps.size(); i++) {
+        sccRules.push_back(rules.at(comps[i]));
+    }
     
     //Fixed-Point Algorithm
     unsigned int precount = db.countTuples();
@@ -285,12 +291,13 @@ void Interpreter::evalAllRules(){//fixed point algorithm, check if tuples added
     unsigned int loopCount = 0;
     while(precount != postcount){
         precount = db.countTuples();
-        for(unsigned i = 0; i < rules.size(); i++){
-            ruleResults.push_back(evalRule(rules.at(i)));
+        for(unsigned i = 0; i < sccRules.size(); i++){
+            ruleResults.push_back(evalRule(sccRules.at(i)));
         }
         postcount = db.countTuples();
         loopCount++;
     }
+    //numPasses++;
     //cout << loopCount << " passes: R";
     //cout << "\nSchemes populated after " << loopCount << " passes through the Rules.\n";
 }
@@ -300,23 +307,19 @@ bool Interpreter::isRuleDependent(Rule rule1, Rule rule2) {
     }*/
     string rule1String = rule1.getRuleHeadPredicate().substr(0, rule1.getRuleHeadPredicate().find("("));
     string rule2String = rule2.getRulePredicate().substr(0, rule2.getRulePredicate().find("("));
-    cout << "rule1: " << rule1String << endl;
-    cout << "rule2: " << rule2String << endl;
+    //cout << "rule1: " << rule1String << endl;
+    //cout << "rule2: " << rule2String << endl;
     if (rule1String == rule2String) {
-        //cout << "head equals" << endl;
         return true;
     }
     for (unsigned int i = 0; i < rule2.getRulePredicateList().size(); i++) {
-        //cout << "rule1:" << rule1.getRuleHeadPredicate() << endl;
-        //cout << "rule2: " << rule2.getRulePredicateList().at(i) << endl;
         
         if (rule2.getRulePredicateList().at(i) == ",") continue;
         //cout << "predicate: " << rule2.getRulePredicateList().at(i) << endl;
         string ruleForString = rule2.getRulePredicateList().at(i).substr(0, rule2.getRulePredicateList().at(i).find("("));
-        cout << "ruleFS: " << ruleForString << endl;
+        //cout << "ruleFS: " << ruleForString << endl;
         if (rule1String == ruleForString) { //checking the comma? Rule 2 is staying constant
         //grab head of rule, check all predicates in the list against head predicate. If match then add. 
-            cout << "end of run" << endl;
             return true;
         }
     }
@@ -332,9 +335,9 @@ void Interpreter::smartEvalRules() {
         //cout << rules[i].ruleToString() << endl;
         for (unsigned int j = 0; j < nRules; j++) {
             //if(i == j) continue;
-            cout << "i: " << i << " j: " << j << endl;
+            //cout << "i: " << i << " j: " << j << endl;
             if (isRuleDependent(rules[i],rules[j])) {
-                cout << "found edge" << endl;
+                //cout << "found edge" << endl;
                 dependency.addEdge(j, i);
             }
         }
@@ -348,25 +351,39 @@ void Interpreter::smartEvalRules() {
     vector<int> pnums = rg.DFSForest();
     //cout << "Postorder Numbers"  << endl;
     //cout << rg.positions() << endl;
-    //cout << "SCC Search Order" << endl;
-    cout << dependency.toString();
+    //cout << "SCC Search Order" << endl;*/
+    cout << dependency.toString(); //extra comma
     cout << endl;
     
     cout << "Rule Evaluation" << endl;
     vector<vector<int>> comps = dependency.scc();
+    //numPasses = 0;
     for (unsigned int i = 0; i < comps.size(); i++) {
-        cout << "SCC:";
+        numPasses = 1;
+        cout << "SCC: ";
         unsigned int compSize = comps[i].size();
+        //cout << "compSize: " << compSize << endl;
         for (unsigned int j = 0; j < compSize; j++) {
-            cout << " R" << comps[i][j];
+            cout << "R" << comps[i][j];
+            if(compSize > 1) {
+                cout << ",";
+            }
+            
+            //print out commas for format R1,R2,R3
         }
         cout << endl;
-        if (compSize == 1 && dependency.hasEdge(comps[i][0], comps[i][0])) {
+        if (compSize == 1 && !dependency.hasEdge(comps[i][0], comps[i][0])) { ////dependency.nodeVec[i].neighbors.empty();
             evalRule(rules[comps[i][0]]);
-            cout << endl;
-            continue;
+            //cout << endl;
+            //numPasses++; 
+            //cout << "RULES: " << rules[comps[i][0]].ruleToString() << endl;
         }
-        evalAllRules();
+        else {
+            //cout << "compi:" << comps[i].at(0) << endl;
+            evalAllRules(comps[i]);
+            numPasses++;
+        }
+        //print out all comps[i][0], , , 
         cout << numPasses << " passes: R" << comps[i][0] << endl;
     }
 }
